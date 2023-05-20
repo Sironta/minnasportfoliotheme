@@ -1,0 +1,105 @@
+/* IMPORTED FONTS */
+
+@font-face {
+    font-family: Sansita-Regular;
+    src: url(fonts/Sansita/Sansita-Regular.ttf);
+}
+
+@font-face {
+    font-family: Barlow-Light;
+    src: url(fonts/Barlow/Barlow-Light.ttf);
+}
+
+@font-face {
+    font-family: Barlow-Regular;
+    src: url(fonts/Barlow/Barlow-Regular.ttf);
+}
+
+@font-face {
+    font-family: Barlow-Semi-Bold;
+    src: url(fonts/Barlow/Barlow-SemiBold.ttf);
+}
+
+
+
+/* MIXINS */
+
+@mixin heading-font {
+    font-family: 'Sansita-Regular', 'Lucida Sans', 'Trebuchet MS';
+    color: $primary-font-color;
+    margin: 0;
+}
+
+@mixin paragraph-font {
+    font-family: 'Barlow-Regular', 'Verdana', 'Tahoma';
+    color: $primary-font-color;
+    font-size: $small-font;
+    margin: 0;
+}
+
+@mixin nav-font {
+    @include paragraph-font;
+    font-family: 'Barlow-Light', 'Verdana', 'Tahoma';
+    text-transform: uppercase;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $primary-font-color;
+    &:hover {
+        color: darken($primary-font-color, $amount: 10%);
+    }
+    &:active {
+        color: darken($primary-font-color, $amount: 20%);
+        font-size: 1rem;
+    }
+}
+
+@mixin button-text {
+    @include paragraph-font;
+    font-family: 'Barlow-Semi-Bold', 'Verdana', 'Tahoma';
+    font-weight: 600;
+    font-size: $medium-2-font;
+    color: $secondary-font-color;
+}
+
+@mixin list {
+    list-style: none;
+    margin: 0;
+}
+
+/* TEXT STYLES */
+
+h1 {
+    @include heading-font;
+    font-size: $x-large-font;
+}
+
+h2 {
+    @include heading-font;
+    font-size: $large-font;
+}
+
+h3 {
+    @include paragraph-font;
+    font-size: $medium-1-font;
+}
+
+p {
+    @include paragraph-font;
+}
+
+.tiny-p {
+    @include paragraph-font;
+    font-size: $smaller-font;
+}
+
+nav li {
+    @include list;
+    display: inline-block;
+}
+
+nav a {
+    @include nav-font;
+    @include link;
+}

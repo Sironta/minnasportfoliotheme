@@ -1,0 +1,143 @@
+/* COLORS */
+/* FONT SIZES */
+/* IMPORTED FONTS */
+@font-face {
+  font-family: Sansita-Regular;
+  src: url(fonts/Sansita/Sansita-Regular.ttf);
+}
+@font-face {
+  font-family: Barlow-Light;
+  src: url(fonts/Barlow/Barlow-Light.ttf);
+}
+@font-face {
+  font-family: Barlow-Regular;
+  src: url(fonts/Barlow/Barlow-Regular.ttf);
+}
+@font-face {
+  font-family: Barlow-Semi-Bold;
+  src: url(fonts/Barlow/Barlow-SemiBold.ttf);
+}
+/* MIXINS */
+/* TEXT STYLES */
+h1 {
+  font-family: "Sansita-Regular", "Lucida Sans", "Trebuchet MS";
+  color: #ECF2F6;
+  margin: 0;
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-family: "Sansita-Regular", "Lucida Sans", "Trebuchet MS";
+  color: #ECF2F6;
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+p {
+  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.tiny-p {
+  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 0;
+  font-size: 1rem;
+}
+
+nav li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+}
+
+nav a {
+  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 0;
+  font-family: "Barlow-Light", "Verdana", "Tahoma";
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ECF2F6;
+}
+nav a:hover {
+  color: #c9dae6;
+}
+nav a:active {
+  color: #a7c3d5;
+  font-size: 1rem;
+}
+
+.primary-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #ECC30B;
+  color: #040F16;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 0;
+  font-family: "Barlow-Semi-Bold", "Verdana", "Tahoma";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #040F16;
+}
+.primary-btn:hover {
+  background-color: #d4af0a;
+}
+.primary-btn:active {
+  background-color: #bb9b09;
+}
+
+.secondary-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #040F16;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 0;
+  font-family: "Barlow-Semi-Bold", "Verdana", "Tahoma";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #040F16;
+}
+.secondary-btn:hover {
+  background-color: rgba(242, 242, 242, 0.5);
+}
+.secondary-btn:active {
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+body {
+  background-color: #005E7C;
+}
+
+/*# sourceMappingURL=style.css.map */
