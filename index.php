@@ -29,6 +29,6 @@
         Or me!
     </button>
     <p>Nothing happens if you press tho!</p>
-    <p class="tiny-p">Haa-haa!</p>
+    <p class="tiny-p">Haw-haw!</p>
 </body>
 </html>
