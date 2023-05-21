@@ -4,33 +4,31 @@
 h1 {
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
   color: #ECF2F6;
-  margin: 0;
   font-size: 2.75rem;
+  margin: 0;
 }
 
 h2 {
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
   color: #ECF2F6;
-  margin: 0;
   font-size: 2.25rem;
+  margin: 0;
 }
 
 h3 {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   font-weight: 800;
   margin: 0;
-  font-size: 1.75rem;
 }
 
 h4 {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 800;
   margin: 0;
-  font-size: 1.5rem;
 }
 
 h5 {
@@ -39,35 +37,30 @@ h5 {
   font-size: 1.25rem;
   font-weight: 800;
   margin: 0;
-  font-size: 1.25rem;
 }
 
 h6 {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 800;
   margin: 0;
-  font-size: 1rem;
 }
 
 p {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
-  font-weight: 800;
-  margin: 0;
   font-weight: 400;
+  margin: 0;
 }
 
 .tiny-p {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin: 0;
   font-size: 0.75rem;
   font-weight: 300;
+  margin: 0;
 }
 
 /* BASE */
@@ -77,8 +70,14 @@ body {
 
 /* BUTTONS */
 .primary-btn {
+  font-family: Barlow, "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
   display: inline-block;
-  padding: 10px 30px;
+  padding: 16px 24px;
+  margin: 16px;
   background-color: #ECC30B;
   color: #040F16;
   border: none;
@@ -88,28 +87,25 @@ body {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
-  font-family: Barlow, "Verdana", "Tahoma";
-  color: #ECF2F6;
-  font-size: 1.25rem;
-  font-weight: 800;
-  margin: 0;
-  font-family: Barlow, "Verdana", "Tahoma";
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #040F16;
 }
 .primary-btn:hover {
-  background-color: #d4af0a;
+  background-color: #f7d84d;
 }
 .primary-btn:active {
   background-color: #bb9b09;
 }
 
 .secondary-btn {
+  font-family: Barlow, "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
   display: inline-block;
-  padding: 10px 30px;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #040F16;
+  padding: 16px 24px;
+  margin: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ECF2F6;
   border: none;
   border-radius: 7px;
   text-align: center;
@@ -117,21 +113,55 @@ body {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
+  box-shadow: none;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+}
+.secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.secondary-btn:active {
+  background-color: rgba(230, 230, 230, 0);
+}
+.secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #040F16;
+}
+.secondary-btn:active {
+  background-color: rgba(179, 179, 179, 0.5);
+}
+
+.tertiary-btn {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
-  font-weight: 800;
-  margin: 0;
-  font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
-  font-size: 1.5rem;
-  color: #040F16;
+  margin: 0;
+  display: inline-block;
+  padding: 16px 24px;
+  margin: 16px;
+  background-color: rgba(255, 255, 255, 0);
+  color: #ECF2F6;
+  border: none;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+  box-shadow: none;
+  text-decoration: underline;
 }
-.secondary-btn:hover {
-  background-color: rgba(242, 242, 242, 0.5);
+.tertiary-btn:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
-.secondary-btn:active {
-  background-color: rgba(230, 230, 230, 0.5);
+.tertiary-btn:active {
+  background-color: rgba(230, 230, 230, 0);
+}
+.tertiary-btn:hover {
+  color: #c9dae6;
+}
+.tertiary-btn:active {
+  color: #a7c3d5;
 }
 
 /* NAVIGATION */
@@ -147,11 +177,10 @@ nav ul li a {
   font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
-  font-weight: 800;
+  font-weight: 200;
   margin: 0;
   font-family: Barlow, "Verdana", "Tahoma";
   text-transform: uppercase;
-  font-weight: 200;
   text-decoration: none;
   color: #ECF2F6;
 }

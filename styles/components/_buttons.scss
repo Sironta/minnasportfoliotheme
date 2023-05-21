@@ -1,8 +1,12 @@
+// Primary button: hover lighten - Secondary button: Outlined before or after hover?
+
 /* BUTTONS */
 
-@mixin button($background-color, $text-color) {
+@mixin button($background-color, $text-color: $secondary-font-color) {
+    @include paragraph-font($small-font, 600);
     display: inline-block;
-    padding: 10px 30px;
+    padding: 16px 24px;
+    margin: 16px;
     background-color: $background-color;
     color: $text-color;
     border: none;
@@ -14,7 +18,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-        background-color: darken($background-color, $amount: 5%)
+        background-color: lighten($background-color, $amount: 15%)
     }
 
     &:active {
@@ -22,12 +26,39 @@
     }
 }
 
+@mixin button-2 {
+    box-shadow: none;
+}
+
 .primary-btn {
-    @include button ($accent-color, $secondary-font-color);
-    @include button-text;
+    @include button ($accent-color);
 }
 
 .secondary-btn {
-    @include button ($secondary-button-color, $secondary-font-color);
-    @include button-text;
+    @include button ($transparent, $primary-font-color);
+    @include button-2;
+    border: $base-border;
+
+    &:hover {
+        background-color: $off-white;
+        color: $secondary-font-color;
+    }
+
+    &:active {
+        background-color: darken($off-white, $amount: 30%);
+    }
+}
+
+.tertiary-btn {
+    @include button($transparent, $primary-font-color);
+    @include button-2;
+    text-decoration: underline;
+
+    &:hover {
+        color: darken($primary-font-color, $amount: 10%);
+    }
+
+    &:active {
+        color: darken($primary-font-color, $amount: 20%);
+    }
 }

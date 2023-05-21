@@ -8,25 +8,25 @@
 
 // MIXINS
 
-@mixin heading-font {
+@mixin heading-font($font-size) {
     font-family: Sansita, 'Lucida Sans', 'Trebuchet MS';
     color: $primary-font-color;
+    font-size: $font-size;
     margin: 0;
 }
 
-@mixin paragraph-font {
+@mixin paragraph-font($font-size, $font-weight: 800) {
     font-family: Barlow, 'Verdana', 'Tahoma';
     color: $primary-font-color;
-    font-size: $small-font;
-    font-weight: 800;
+    font-size: $font-size;
+    font-weight: $font-weight;
     margin: 0;
 }
 
 @mixin nav-font {
-    @include paragraph-font;
+    @include paragraph-font($small-font, 200);
     font-family: Barlow, 'Verdana', 'Tahoma';
     text-transform: uppercase;
-    font-weight: 200;
 }
 
 @mixin link {
@@ -40,14 +40,6 @@
     }
 }
 
-@mixin button-text {
-    @include paragraph-font;
-    font-family: Barlow, 'Verdana', 'Tahoma';
-    font-weight: 600;
-    font-size: $medium-2-font;
-    color: $secondary-font-color;
-}
-
 @mixin list {
     list-style: none;
     margin: 0;
@@ -56,43 +48,34 @@
 /* TEXT STYLES */
 
 h1 {
-    @include heading-font;
-    font-size: $x-large-font;
+    @include heading-font($x-large-font);
 }
 
 h2 {
-    @include heading-font;
-    font-size: $large-font;
+    @include heading-font($large-font);
 }
 
 h3 {
-    @include paragraph-font;
-    font-size: $medium-1-font;
+    @include paragraph-font($medium-1-font);
 }
 
 h4 {
-    @include paragraph-font;
-    font-size: $medium-2-font;
+    @include paragraph-font($medium-2-font);
 }
 
 h5 {
-    @include paragraph-font;
-    font-size: $small-font;
+    @include paragraph-font( $small-font);
 }
 
 h6 {
-    @include paragraph-font;
-    font-size: $smaller-font;
+    @include paragraph-font($smaller-font);
 }
 
 p {
-    @include paragraph-font;
-    font-weight: 400;
+    @include paragraph-font($small-font, 400);
 }
 
 .tiny-p {
-    @include paragraph-font;
-    font-size: $tiny-font;
-    font-weight: 300;
+    @include paragraph-font($tiny-font, 300);
 }
 

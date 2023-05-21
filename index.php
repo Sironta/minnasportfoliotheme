@@ -37,5 +37,8 @@
     <button class="secondary-btn">
         Secondary button
     </button>
+    <button class="tertiary-btn">
+        Tertiary button
+    </button>
 </body>
 </html>
