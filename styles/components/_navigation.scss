@@ -1,0 +1,15 @@
+/* NAVIGATION */
+
+nav {
+    ul {
+        padding: 0;
+        li {
+            @include list;
+            display: inline-block;
+            a {
+                @include nav-font;
+                @include link;
+            }
+        }
+    }
+}

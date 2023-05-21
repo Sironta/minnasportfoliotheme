@@ -1,7 +1,11 @@
+//variables & functions
 @import 'variables';
 @import 'typography';
-@import 'components/buttons';
 
-body {
-    background-color: $primary-color;
-}
+//base & layout
+@import 'layouts/base';
+
+//components (button, card, navbar)
+@import 'components/buttons';
+@import 'components/navigation.scss';
+

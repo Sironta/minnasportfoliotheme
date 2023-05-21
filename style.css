@@ -1,85 +1,81 @@
-/* COLORS */
-/* FONT SIZES */
-/* IMPORTED FONTS */
-@font-face {
-  font-family: Sansita-Regular;
-  src: url(fonts/Sansita/Sansita-Regular.ttf);
-}
-@font-face {
-  font-family: Barlow-Light;
-  src: url(fonts/Barlow/Barlow-Light.ttf);
-}
-@font-face {
-  font-family: Barlow-Regular;
-  src: url(fonts/Barlow/Barlow-Regular.ttf);
-}
-@font-face {
-  font-family: Barlow-Semi-Bold;
-  src: url(fonts/Barlow/Barlow-SemiBold.ttf);
-}
-/* MIXINS */
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* TEXT STYLES */
 h1 {
-  font-family: "Sansita-Regular", "Lucida Sans", "Trebuchet MS";
+  font-family: Sansita, "Lucida Sans", "Trebuchet MS";
   color: #ECF2F6;
   margin: 0;
   font-size: 2.75rem;
 }
 
 h2 {
-  font-family: "Sansita-Regular", "Lucida Sans", "Trebuchet MS";
+  font-family: Sansita, "Lucida Sans", "Trebuchet MS";
   color: #ECF2F6;
   margin: 0;
   font-size: 2.25rem;
 }
 
 h3 {
-  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
+  font-weight: 800;
   margin: 0;
   font-size: 1.75rem;
 }
 
-p {
-  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+h4 {
+  font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
+  font-weight: 800;
   margin: 0;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: Barlow, "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-family: Barlow, "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  font-size: 1rem;
+}
+
+p {
+  font-family: Barlow, "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  font-weight: 400;
 }
 
 .tiny-p {
-  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
+  font-weight: 800;
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.75rem;
+  font-weight: 300;
 }
 
-nav li {
-  list-style: none;
-  margin: 0;
-  display: inline-block;
+/* BASE */
+body {
+  background-color: #005E7C;
 }
 
-nav a {
-  font-family: "Barlow-Regular", "Verdana", "Tahoma";
-  color: #ECF2F6;
-  font-size: 1.25rem;
-  margin: 0;
-  font-family: "Barlow-Light", "Verdana", "Tahoma";
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ECF2F6;
-}
-nav a:hover {
-  color: #c9dae6;
-}
-nav a:active {
-  color: #a7c3d5;
-  font-size: 1rem;
-}
-
+/* BUTTONS */
 .primary-btn {
   display: inline-block;
   padding: 10px 30px;
@@ -92,11 +88,12 @@ nav a:active {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
-  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
+  font-weight: 800;
   margin: 0;
-  font-family: "Barlow-Semi-Bold", "Verdana", "Tahoma";
+  font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   font-size: 1.5rem;
   color: #040F16;
@@ -120,11 +117,12 @@ nav a:active {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
-  font-family: "Barlow-Regular", "Verdana", "Tahoma";
+  font-family: Barlow, "Verdana", "Tahoma";
   color: #ECF2F6;
   font-size: 1.25rem;
+  font-weight: 800;
   margin: 0;
-  font-family: "Barlow-Semi-Bold", "Verdana", "Tahoma";
+  font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   font-size: 1.5rem;
   color: #040F16;
@@ -136,8 +134,32 @@ nav a:active {
   background-color: rgba(230, 230, 230, 0.5);
 }
 
-body {
-  background-color: #005E7C;
+/* NAVIGATION */
+nav ul {
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+}
+nav ul li a {
+  font-family: Barlow, "Verdana", "Tahoma";
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  text-transform: uppercase;
+  font-weight: 200;
+  text-decoration: none;
+  color: #ECF2F6;
+}
+nav ul li a:hover {
+  color: #c9dae6;
+}
+nav ul li a:active {
+  color: #a7c3d5;
 }
 
 /*# sourceMappingURL=style.css.map */

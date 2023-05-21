@@ -1,46 +1,32 @@
-/* IMPORTED FONTS */
+//IMPORTED FONTS
 
-@font-face {
-    font-family: Sansita-Regular;
-    src: url(fonts/Sansita/Sansita-Regular.ttf);
-}
+    //Sansita
+    @import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: Barlow-Light;
-    src: url(fonts/Barlow/Barlow-Light.ttf);
-}
+    //Barlow
+    @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: Barlow-Regular;
-    src: url(fonts/Barlow/Barlow-Regular.ttf);
-}
-
-@font-face {
-    font-family: Barlow-Semi-Bold;
-    src: url(fonts/Barlow/Barlow-SemiBold.ttf);
-}
-
-
-
-/* MIXINS */
+// MIXINS
 
 @mixin heading-font {
-    font-family: 'Sansita-Regular', 'Lucida Sans', 'Trebuchet MS';
+    font-family: Sansita, 'Lucida Sans', 'Trebuchet MS';
     color: $primary-font-color;
     margin: 0;
 }
 
 @mixin paragraph-font {
-    font-family: 'Barlow-Regular', 'Verdana', 'Tahoma';
+    font-family: Barlow, 'Verdana', 'Tahoma';
     color: $primary-font-color;
     font-size: $small-font;
+    font-weight: 800;
     margin: 0;
 }
 
 @mixin nav-font {
     @include paragraph-font;
-    font-family: 'Barlow-Light', 'Verdana', 'Tahoma';
+    font-family: Barlow, 'Verdana', 'Tahoma';
     text-transform: uppercase;
+    font-weight: 200;
 }
 
 @mixin link {
@@ -51,13 +37,12 @@
     }
     &:active {
         color: darken($primary-font-color, $amount: 20%);
-        font-size: 1rem;
     }
 }
 
 @mixin button-text {
     @include paragraph-font;
-    font-family: 'Barlow-Semi-Bold', 'Verdana', 'Tahoma';
+    font-family: Barlow, 'Verdana', 'Tahoma';
     font-weight: 600;
     font-size: $medium-2-font;
     color: $secondary-font-color;
@@ -85,21 +70,29 @@ h3 {
     font-size: $medium-1-font;
 }
 
-p {
+h4 {
     @include paragraph-font;
+    font-size: $medium-2-font;
 }
 
-.tiny-p {
+h5 {
+    @include paragraph-font;
+    font-size: $small-font;
+}
+
+h6 {
     @include paragraph-font;
     font-size: $smaller-font;
 }
 
-nav li {
-    @include list;
-    display: inline-block;
+p {
+    @include paragraph-font;
+    font-weight: 400;
 }
 
-nav a {
-    @include nav-font;
-    @include link;
+.tiny-p {
+    @include paragraph-font;
+    font-size: $tiny-font;
+    font-weight: 300;
 }
+

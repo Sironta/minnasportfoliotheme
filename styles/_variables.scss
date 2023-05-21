@@ -1,4 +1,4 @@
-/* COLORS */
+// COLORS
 
 $primary-color: #005E7C;
 $secondary-color: #2D4654;
@@ -7,7 +7,7 @@ $primary-font-color: #ECF2F6;
 $secondary-font-color: #040F16;
 $secondary-button-color: rgba(255, 255, 255, 0.5);
 
-/* FONT SIZES */
+// FONT SIZES
 
 $x-large-font: 2.75rem;
 $large-font: 2.25rem;
@@ -15,4 +15,15 @@ $medium-1-font: 1.75rem;
 $medium-2-font: 1.5rem;
 $small-font: 1.25rem;
 $smaller-font: 1rem;
+$tiny-font: 0.75rem;
+
+// BOXES AND BORDERS
+$base-border-radius: 7px;
+$image-border-radius: 100px;
+$base-box-shadow:
+    inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5),
+    inset 4px 4px 5px $secondary-button-color,
+    4px 7px 5px rgba(0, 0, 0, 0.25);
+
+
 
