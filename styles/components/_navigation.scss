@@ -1,11 +1,34 @@
 /* NAVIGATION */
 
+@mixin nav-font {
+    @include paragraph-font($small-font, 200);
+    text-transform: uppercase;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $primary-font-color;
+    &:hover {
+        color: darken($primary-font-color, $amount: 10%);
+    }
+    &:active {
+        color: darken($primary-font-color, $amount: 20%);
+    }
+}
+
+@mixin list {
+    list-style: none;
+}
+
 nav {
     ul {
         padding: 0;
+        margin-left: -$base-padding;
+        margin-right: -$base-padding;
         li {
             @include list;
             display: inline-block;
+            padding: $base-padding;
             a {
                 @include nav-font;
                 @include link;

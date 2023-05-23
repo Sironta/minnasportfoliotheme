@@ -21,12 +21,13 @@ $tiny-font: 0.75rem;
 // BOXES AND BORDERS
 $base-border: solid 2px $off-white;
 $base-border-radius: 7px;
-$image-border-radius: 100px;
+$base-padding: 16px;
+$base-margin: 16px;
 $base-box-shadow:
     inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5),
     inset 4px 4px 5px $off-white,
     4px 7px 5px rgba(0, 0, 0, 0.25);
-$button-padding: 16px 24px;
+
 
 
 

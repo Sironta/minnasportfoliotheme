@@ -8,42 +8,24 @@
 
 // MIXINS
 
-@mixin heading-font($font-size) {
-    font-family: Sansita, 'Lucida Sans', 'Trebuchet MS';
+@mixin basic-font($font-size) {
     color: $primary-font-color;
     font-size: $font-size;
-    margin: 0;
+    margin: $base-margin 0;
+}
+
+@mixin heading-font($font-size) {
+    @include basic-font($font-size);
+    font-family: Sansita, 'Lucida Sans', 'Trebuchet MS';
 }
 
 @mixin paragraph-font($font-size, $font-weight: 800) {
+    @include basic-font($font-size);
     font-family: Barlow, 'Verdana', 'Tahoma';
-    color: $primary-font-color;
-    font-size: $font-size;
     font-weight: $font-weight;
-    margin: 0;
 }
 
-@mixin nav-font {
-    @include paragraph-font($small-font, 200);
-    font-family: Barlow, 'Verdana', 'Tahoma';
-    text-transform: uppercase;
-}
 
-@mixin link {
-    text-decoration: none;
-    color: $primary-font-color;
-    &:hover {
-        color: darken($primary-font-color, $amount: 10%);
-    }
-    &:active {
-        color: darken($primary-font-color, $amount: 20%);
-    }
-}
-
-@mixin list {
-    list-style: none;
-    margin: 0;
-}
 
 /* TEXT STYLES */
 
