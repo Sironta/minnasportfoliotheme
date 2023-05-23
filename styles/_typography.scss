@@ -75,7 +75,7 @@ p {
     @include paragraph-font($small-font, 400);
 }
 
-.tiny-p {
+p.tiny {
     @include paragraph-font($tiny-font, 300);
 }
 

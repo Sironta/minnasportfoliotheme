@@ -5,7 +5,7 @@
 @mixin button($background-color, $text-color: $secondary-font-color) {
     @include paragraph-font($small-font, 600);
     display: inline-block;
-    padding: 16px 24px;
+    padding: $button-padding;
     margin: 16px;
     background-color: $background-color;
     color: $text-color;
