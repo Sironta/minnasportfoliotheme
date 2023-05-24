@@ -1,0 +1,24 @@
+.wp-block-columns {
+    margin: 100px 0;
+}
+
+.wp-block-column {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+}
+
+@include lg {
+    .wp-block-column p {
+        max-width: 400px;
+    }
+}
+
+@include sm {
+    .wp-block-column p {
+        max-width: 600px;
+    }
+}
+
+

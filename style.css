@@ -47,6 +47,15 @@ h6 {
   font-weight: 800;
 }
 
+p.large {
+  color: #ECF2F6;
+  font-size: 1.5rem;
+  margin: 16px 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  font-weight: 400;
+  max-width: 400px;
+}
+
 p {
   color: #ECF2F6;
   font-size: 1rem;
@@ -156,6 +165,26 @@ a:visited {
 
 .justify-space-around {
   justify-content: space-around;
+}
+
+.align-flex-start {
+  align-content: flex-start;
+}
+
+.align-flex-end {
+  align-content: flex-end;
+}
+
+.align-center {
+  align-content: center;
+}
+
+.align-space-between {
+  align-content: space-between;
+}
+
+.align-space-around {
+  align-content: space-around;
 }
 
 @media (min-width: 0) {
@@ -496,7 +525,7 @@ header.container {
   font-weight: 600;
   display: inline-block;
   padding: 16px 32px;
-  margin: 16px;
+  margin: 16px 0px;
   background-color: #ECC30B;
   color: #040F16;
   border: none;
@@ -522,7 +551,7 @@ header.container {
   font-weight: 600;
   display: inline-block;
   padding: 16px 32px;
-  margin: 16px;
+  margin: 16px 0px;
   background-color: rgba(255, 255, 255, 0);
   color: #ECF2F6;
   border: none;
@@ -557,7 +586,7 @@ header.container {
   font-weight: 600;
   display: inline-block;
   padding: 16px 32px;
-  margin: 16px;
+  margin: 16px 0px;
   background-color: rgba(255, 255, 255, 0);
   color: #ECF2F6;
   border: none;
@@ -621,6 +650,28 @@ header.container {
 }
 .primary-nav ul li a:active {
   text-decoration: overline;
+}
+
+.wp-block-columns {
+  margin: 100px 0;
+}
+
+.wp-block-column {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .wp-block-column p {
+    max-width: 400px;
+  }
+}
+@media (min-width: 480px) {
+  .wp-block-column p {
+    max-width: 600px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

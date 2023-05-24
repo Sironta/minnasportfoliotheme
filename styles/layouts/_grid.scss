@@ -22,7 +22,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     flex-flow: row wrap;
 }
 
-//grid gaps
+//grid gaps, example class in html: gap-2 
 @each $key, $val in $grid-gaps {
     .gap-#{$key} > * {
         padding: $val;
@@ -33,10 +33,17 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     }
 }
 
-//justify content classes
+//justify content classes, example class in html: justify-center
 @each $val in $layout-values {
     .justify-#{$val} {
         justify-content: $val;
+    }
+}
+
+//align content classes, example class in html: align-center
+@each $val in $layout-values {
+    .align-#{$val} {
+        align-content: $val;
     }
 }
 
