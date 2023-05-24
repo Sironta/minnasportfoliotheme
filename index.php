@@ -9,21 +9,23 @@
 </head>
 <body>
     <header class="container">
-        <h2 class="Site title">Portfolio</h2>
-        <nav class="primary-nav">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <p>Cheat sheet for styling.</p>
+        <div class="header container">
+            <h2 class="Site title">Portfolio</h2>
+            <nav class="primary-nav">
+                <ul>
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <p>Cheat sheet for styling.</p>
+        </div>
     </header>
     <div class="container">
         <h1>h1 Heading</h1>
@@ -32,7 +34,7 @@
         <h4>h4 Heading</h4>
         <h5>h5 Heading</h5>
         <h6>h6 Heading</h6>
-        <p>Paragrapgh</p>
+        <p>Paragrapgh with <a href="#link">a link</a> and <a href="#another">another</a></p>
         <p class="tiny">Tiny paragraph</p>
 
         <button class="primary-btn">

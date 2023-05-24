@@ -1,0 +1,12 @@
+header.container {
+    max-width: 1300px;
+    box-shadow: $base-box-shadow;
+    border-radius: $base-border-radius $base-border-radius;
+}
+
+.header {
+    @extend %flex-layout;
+    p {
+        white-space: nowrap;
+    }
+}

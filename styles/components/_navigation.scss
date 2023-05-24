@@ -1,25 +1,5 @@
 /* NAVIGATION */
 
-@mixin nav-font {
-    @include paragraph-font($small-font, 200);
-    text-transform: uppercase;
-}
-
-@mixin link {
-    text-decoration: none;
-    color: $primary-font-color;
-    &:hover {
-        color: darken($primary-font-color, $amount: 10%);
-    }
-    &:active {
-        color: darken($primary-font-color, $amount: 20%);
-    }
-}
-
-@mixin list {
-    list-style: none;
-}
-
 %flex-layout {
     width: 100%;
     display: flex;
@@ -28,29 +8,28 @@
     box-sizing: border-box;
 }
 
-header {
-    @extend %flex-layout;
-    box-shadow: $base-box-shadow;
-    border-radius: $base-border-radius $base-border-radius;
-    p {
-        white-space: nowrap;
-    }
-}
-
 .primary-nav {
     @extend %flex-layout;
     justify-content: center;
     ul {
-        padding: 0;
         margin-left: -$base-padding;
         margin-right: -$base-padding;
         li {
-            @include list;
+            list-style: none;
             display: inline-block;
             padding: 0 $base-padding;
             a {
-                @include nav-font;
                 @include link;
+                @include paragraph-font($small-font, 200);
+                text-transform: uppercase;
+                transition: text-decoration 0.5s ease;
+
+                &:hover {
+                    text-decoration: overline;
+                }
+                &:active {
+                    text-decoration: overline;
+                }
             }
         }
     }

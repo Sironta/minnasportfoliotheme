@@ -1,0 +1,24 @@
+//font and link mixins
+
+@mixin basic-font($font-size) {
+    color: $primary-font-color;
+    font-size: $font-size;
+    margin: $base-margin 0;
+}
+
+@mixin heading-font($font-size) {
+    @include basic-font($font-size);
+    font-family: Sansita, 'Lucida Sans', 'Trebuchet MS';
+}
+
+@mixin paragraph-font($font-size, $font-weight: 800) {
+    @include basic-font($font-size);
+    font-family: Barlow, 'Verdana', 'Tahoma';
+    font-weight: $font-weight;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $primary-font-color;
+    font-weight: 600;
+}

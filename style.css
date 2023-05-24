@@ -69,6 +69,26 @@ body {
   background-color: #005E7C;
 }
 
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ECF2F6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #c9dae6;
+}
+a:active {
+  color: #a7c3d5;
+}
+a:visited {
+  color: #a7c3d5;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -457,6 +477,16 @@ body {
   align-items: center;
 }
 
+header.container {
+  max-width: 1300px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 7px 7px;
+}
+
+.header p {
+  white-space: nowrap;
+}
+
 /* BUTTONS */
 .primary-btn {
   color: #ECF2F6;
@@ -554,7 +584,7 @@ body {
 }
 
 /* NAVIGATION */
-.primary-nav, header {
+.primary-nav, .header {
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -562,19 +592,10 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 7px 7px;
-}
-header p {
-  white-space: nowrap;
-}
-
 .primary-nav {
   justify-content: center;
 }
 .primary-nav ul {
-  padding: 0;
   margin-left: -16px;
   margin-right: -16px;
 }
@@ -584,20 +605,22 @@ header p {
   padding: 0 16px;
 }
 .primary-nav ul li a {
+  text-decoration: none;
+  color: #ECF2F6;
+  font-weight: 600;
   color: #ECF2F6;
   font-size: 1.25rem;
   margin: 16px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 200;
   text-transform: uppercase;
-  text-decoration: none;
-  color: #ECF2F6;
+  transition: text-decoration 0.5s ease;
 }
 .primary-nav ul li a:hover {
-  color: #c9dae6;
+  text-decoration: overline;
 }
 .primary-nav ul li a:active {
-  color: #a7c3d5;
+  text-decoration: overline;
 }
 
 /*# sourceMappingURL=style.css.map */

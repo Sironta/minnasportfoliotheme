@@ -1,12 +1,13 @@
 //variables & functions
 @import 'variables';
+@import 'mixins';
 @import 'typography';
 
 //base & layout
 @import 'layouts/base';
 @import 'layouts/breakpoints';
 @import 'layouts/grid';
-
+@import 'layouts/header';
 
 //components (button, card, navbar)
 @import 'components/buttons';

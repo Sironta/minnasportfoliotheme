@@ -4,3 +4,21 @@ body {
     margin: 0;
     background-color: $primary-color;
 }
+
+ul {
+    padding: 0;
+}
+
+a {
+    @include link;
+    transition: color 0.3s ease;
+    &:hover {
+        color: darken($primary-font-color, $amount: 10%);
+    }
+    &:active {
+        color: darken($primary-font-color, $amount: 20%);
+    }
+    &:visited {
+        color: darken($primary-font-color, $amount: 20%);
+    }
+}
