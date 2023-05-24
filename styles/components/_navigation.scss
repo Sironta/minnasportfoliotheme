@@ -20,7 +20,26 @@
     list-style: none;
 }
 
-nav {
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+header {
+    @extend %flex-layout;
+    box-shadow: $base-box-shadow;
+    border-radius: $base-border-radius $base-border-radius;
+    p {
+        white-space: nowrap;
+    }
+}
+
+.primary-nav {
+    @extend %flex-layout;
+    justify-content: center;
     ul {
         padding: 0;
         margin-left: -$base-padding;
@@ -28,7 +47,7 @@ nav {
         li {
             @include list;
             display: inline-block;
-            padding: $base-padding;
+            padding: 0 $base-padding;
             a {
                 @include nav-font;
                 @include link;

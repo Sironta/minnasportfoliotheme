@@ -23,7 +23,8 @@ $base-border: solid 2px $off-white;
 $base-border-radius: 7px;
 $base-padding: 16px;
 $base-margin: 16px;
-$base-box-shadow:
+$base-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+$button-box-shadow:
     inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5),
     inset 4px 4px 5px $off-white,
     4px 7px 5px rgba(0, 0, 0, 0.25);

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url") ?>">
 </head>
 <body>
-    <div class="container">
-        <nav>
+    <header class="container">
+        <h2 class="Site title">Portfolio</h2>
+        <nav class="primary-nav">
             <ul>
                 <li>
                     <a href="#">Home</a>
@@ -22,7 +23,9 @@
                 </li>
             </ul>
         </nav>
-
+        <p>Cheat sheet for styling.</p>
+    </header>
+    <div class="container">
         <h1>h1 Heading</h1>
         <h2>h2 Heading</h2>
         <h3>h3 Heading</h3>
@@ -44,27 +47,27 @@
 
         <div class="row gap-2 justify-center">
             <div class="col-12-xs col-5-sm col-3-xl">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Lorem, ipsum.</h3>
                 <div class="card-test">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
             </div>
             <div class="col-12-xs col-5-sm col-3-xl">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Lorem, ipsum.</h3>
                 <div class="card-test">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
             </div>
             <div class="col-12-xs col-5-sm col-3-xl">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Lorem, ipsum.</h3>
                 <div class="card-test">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
             </div>
             <div class="col-12-xs col-5-sm col-3-xl">
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3>Lorem, ipsum.</h3>
                 <div class="card-test">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 </div>
             </div>
         </div>
