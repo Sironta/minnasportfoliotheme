@@ -1,7 +1,7 @@
 //variables & functions
-@import 'variables';
-@import 'mixins';
-@import 'typography';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/typography';
 
 //base & layout
 @import 'layouts/base';

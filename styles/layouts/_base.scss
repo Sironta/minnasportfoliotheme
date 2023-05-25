@@ -2,7 +2,8 @@
 
 body {
     margin: 0;
-    background-color: $primary-color;
+    background: $primary-color;
+    background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
 }
 
 ul {

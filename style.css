@@ -75,7 +75,8 @@ p.tiny {
 /* BASE */
 body {
   margin: 0;
-  background-color: #005E7C;
+  background: #005E7C;
+  background: linear-gradient(180deg, #005E7C 0%, #2D4654 100%);
 }
 
 ul {
