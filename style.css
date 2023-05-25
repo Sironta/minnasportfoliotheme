@@ -507,14 +507,25 @@ a:visited {
   align-items: center;
 }
 
+.primary-nav, .header, header.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
 header.container {
   max-width: 1300px;
+  min-height: 100px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   border-radius: 7px 7px;
 }
 
-.header p {
-  white-space: nowrap;
+img#header-logo {
+  height: 60px;
+  width: auto;
+  margin: 16px 0;
 }
 
 /* BUTTONS */
@@ -525,7 +536,7 @@ header.container {
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   display: inline-block;
-  padding: 16px 32px;
+  padding: 8px 32px;
   margin: 16px 0px;
   background-color: #ECC30B;
   color: #040F16;
@@ -536,6 +547,7 @@ header.container {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 .primary-btn:hover {
   background-color: #f7d84d;
@@ -551,7 +563,7 @@ header.container {
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   display: inline-block;
-  padding: 16px 32px;
+  padding: 8px 32px;
   margin: 16px 0px;
   background-color: rgba(255, 255, 255, 0);
   color: #ECF2F6;
@@ -562,6 +574,7 @@ header.container {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
+  white-space: nowrap;
   box-shadow: none;
   border: solid 2px rgba(255, 255, 255, 0.5);
 }
@@ -586,7 +599,7 @@ header.container {
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   display: inline-block;
-  padding: 16px 32px;
+  padding: 8px 32px;
   margin: 16px 0px;
   background-color: rgba(255, 255, 255, 0);
   color: #ECF2F6;
@@ -597,6 +610,7 @@ header.container {
   cursor: pointer;
   box-shadow: inset -5px -5px 5px -3px rgba(0, 0, 0, 0.5), inset 4px 4px 5px rgba(255, 255, 255, 0.5), 4px 7px 5px rgba(0, 0, 0, 0.25);
   transition: background-color 0.3s ease;
+  white-space: nowrap;
   box-shadow: none;
   text-decoration: underline;
 }
@@ -614,14 +628,6 @@ header.container {
 }
 
 /* NAVIGATION */
-.primary-nav, .header {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
-
 .primary-nav {
   justify-content: center;
 }

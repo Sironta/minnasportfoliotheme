@@ -1,12 +1,25 @@
+%flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
 header.container {
+    @extend %flex-layout;
     max-width: 1300px;
+    min-height: 100px;
     box-shadow: $base-box-shadow;
     border-radius: $base-border-radius $base-border-radius;
 }
 
 .header {
     @extend %flex-layout;
-    p {
-        white-space: nowrap;
-    }
+}
+
+img#header-logo {
+    height: 60px;
+    width: auto;
+    margin: $base-margin 0;
 }

@@ -11,7 +11,9 @@
 <body>
     <header class="container">
         <div class="header container">
-            <h2 class="Site title">Portfolio</h2>
+        <a href="<?php echo home_url(); ?>">
+            <img id="header-logo" src="<?php bloginfo("template_url") ?>/Logo.png" alt="">
+        </a>
             <nav class="primary-nav">
                 <ul>
                     <li>
@@ -25,6 +27,6 @@
                     </li>
                 </ul>
             </nav>
-            <p>Cheat sheet for styling.</p>
+            <button class="primary-btn">Hire me</button>
         </div>
     </header>

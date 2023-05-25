@@ -5,7 +5,7 @@
 @mixin button($background-color, $text-color: $secondary-font-color) {
     @include paragraph-font($small-font, 600);
     display: inline-block;
-    padding: $base-padding $base-padding * 2;
+    padding: $base-padding / 2 $base-padding * 2;
     margin: $base-margin $base-margin - $base-margin;
     background-color: $background-color;
     color: $text-color;
@@ -16,6 +16,7 @@
     cursor: pointer;
     box-shadow: $button-box-shadow;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 
     &:hover {
         background-color: lighten($background-color, $amount: 15%)
