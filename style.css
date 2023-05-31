@@ -73,9 +73,10 @@ p.tiny {
 
 /* BASE */
 body {
+  height: 5000px;
   margin: 0;
   background: #006c90;
-  background: linear-gradient(180deg, #006c90 0%, #2D4654 100%);
+  background: repeating-linear-gradient(to bottom, #006c90, #006c90 15%, #2D4654 30%, #006c90 45%, #2D4654 60%, #006c90 75%, #2D4654 100%);
 }
 
 ul {

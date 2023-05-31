@@ -1,9 +1,19 @@
 /* BASE */
 
 body {
+    height: 5000px;
     margin: 0;
     background: $primary-color;
-    background: linear-gradient(180deg, $primary-color 0%, $secondary-color 100%);
+    background: repeating-linear-gradient(
+        to bottom,
+        $primary-color,
+        $primary-color 15%,
+        $secondary-color 30%,
+        $primary-color 45%,
+        $secondary-color 60%,
+        $primary-color 75%,
+        $secondary-color 100%,
+      );
 }
 
 ul {
