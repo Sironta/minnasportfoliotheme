@@ -3,7 +3,7 @@
 @mixin basic-font($font-size) {
     color: $primary-font-color;
     font-size: $font-size;
-    margin: $base-margin 0;
+    margin: $base-margin * 2 0;
 }
 
 @mixin heading-font($font-size) {
@@ -21,4 +21,8 @@
     text-decoration: none;
     color: $primary-font-color;
     font-weight: 600;
+}
+
+@mixin paragraph-container($width) {
+    max-width: $width;
 }

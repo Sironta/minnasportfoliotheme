@@ -4,21 +4,21 @@
 h1 {
   color: #ECF2F6;
   font-size: 2.75rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
 }
 
 h2 {
   color: #ECF2F6;
   font-size: 2.25rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
 }
 
 h3 {
   color: #ECF2F6;
   font-size: 1.75rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 800;
 }
@@ -26,7 +26,7 @@ h3 {
 h4 {
   color: #ECF2F6;
   font-size: 1.5rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 800;
 }
@@ -34,7 +34,7 @@ h4 {
 h5 {
   color: #ECF2F6;
   font-size: 1.25rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 800;
 }
@@ -42,7 +42,7 @@ h5 {
 h6 {
   color: #ECF2F6;
   font-size: 1rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 800;
 }
@@ -50,16 +50,15 @@ h6 {
 p.large {
   color: #ECF2F6;
   font-size: 1.5rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 400;
-  max-width: 400px;
 }
 
 p {
   color: #ECF2F6;
   font-size: 1rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 400;
 }
@@ -67,7 +66,7 @@ p {
 p.tiny {
   color: #ECF2F6;
   font-size: 0.75rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 300;
 }
@@ -110,6 +109,18 @@ a:visited {
 .row {
   display: flex;
   flex-flow: row wrap;
+}
+
+.p-container-regular {
+  max-width: 450px;
+}
+
+.p-container-medium .align-left {
+  max-width: 450px;
+}
+
+.p-container-wide {
+  max-width: 550px;
 }
 
 .gap-0 > * {
@@ -532,7 +543,7 @@ img#header-logo {
 .primary-btn {
   color: #ECF2F6;
   font-size: 1.25rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   display: inline-block;
@@ -559,7 +570,7 @@ img#header-logo {
 .secondary-btn {
   color: #ECF2F6;
   font-size: 1.25rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   display: inline-block;
@@ -595,7 +606,7 @@ img#header-logo {
 .tertiary-btn {
   color: #ECF2F6;
   font-size: 1.25rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 600;
   display: inline-block;
@@ -646,7 +657,7 @@ img#header-logo {
   font-weight: 600;
   color: #ECF2F6;
   font-size: 1.25rem;
-  margin: 16px 0;
+  margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 200;
   text-transform: uppercase;
@@ -661,6 +672,7 @@ img#header-logo {
 
 .wp-block-columns {
   margin: 100px 0;
+  gap: 5em;
 }
 
 .wp-block-column {
@@ -668,17 +680,6 @@ img#header-logo {
   flex-flow: row wrap;
   align-content: center;
   align-items: center;
-}
-
-@media (min-width: 960px) {
-  .wp-block-column p {
-    max-width: 400px;
-  }
-}
-@media (min-width: 480px) {
-  .wp-block-column p {
-    max-width: 600px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

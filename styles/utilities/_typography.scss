@@ -35,7 +35,6 @@ h6 {
 
 p.large {
     @include paragraph-font($medium-2-font, 400);
-    max-width: 400px;
 }
 
 p {

@@ -22,6 +22,20 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     flex-flow: row wrap;
 }
 
+.p-container-regular {
+        @include paragraph-container($regular-paragraph)
+}
+
+.p-container-medium {
+    .align-left {
+        @include paragraph-container($regular-paragraph)
+    }
+}
+
+.p-container-wide {
+    @include paragraph-container($wide-paragraph)
+}
+
 //grid gaps, example class in html: gap-2 
 @each $key, $val in $grid-gaps {
     .gap-#{$key} > * {

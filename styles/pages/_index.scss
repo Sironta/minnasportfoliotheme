@@ -1,5 +1,6 @@
 .wp-block-columns {
     margin: 100px 0;
+    gap: 5em;
 }
 
 .wp-block-column {
@@ -8,17 +9,3 @@
     align-content: center;
     align-items: center;
 }
-
-@include lg {
-    .wp-block-column p {
-        max-width: 400px;
-    }
-}
-
-@include sm {
-    .wp-block-column p {
-        max-width: 600px;
-    }
-}
-
-
