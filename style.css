@@ -561,6 +561,10 @@ header.container {
   border-radius: 7px 7px;
 }
 
+.header {
+  flex-direction: row;
+}
+
 img#header-logo {
   height: 60px;
   width: auto;

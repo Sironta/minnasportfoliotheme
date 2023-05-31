@@ -16,6 +16,7 @@ header.container {
 
 .header {
     @extend %flex-layout;
+    flex-direction: row;
 }
 
 img#header-logo {
