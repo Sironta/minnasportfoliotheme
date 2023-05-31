@@ -1,0 +1,16 @@
+.wp-block-columns {
+    padding: 100px 0;
+    gap: 5em;
+}
+
+.wp-block-column {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+}
+
+/* .wp-block-group__inner-container {
+    display: flex;
+    flex-direction: column;
+} */

@@ -25,4 +25,12 @@
 
 @mixin paragraph-container($width) {
     max-width: $width;
+    margin: 0;
+}
+
+//Layout mixins
+
+@mixin center-self {
+    display: flex;
+    align-self: center;
 }

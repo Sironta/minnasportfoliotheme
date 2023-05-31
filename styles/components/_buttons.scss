@@ -57,3 +57,7 @@
         color: darken($primary-font-color, $amount: 20%);
     }
 }
+
+.base-margin {
+    margin: $base-margin;
+}

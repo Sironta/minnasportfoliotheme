@@ -16,10 +16,21 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
+
 .row {
     display: flex;
     flex-flow: row wrap;
+}
+
+.align-self-center {
+    @include center-self;
+}
+
+.flex-dir-row {
+    flex-direction: row;
 }
 
 .p-container-regular {
@@ -33,6 +44,17 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 .p-container-wide {
     @include paragraph-container($wide-paragraph)
 }
+
+.text-container-wide {
+    @include paragraph-container($xl-wide-paragraph);
+    @include center-self;
+}
+
+.text-container-extra-wide {
+    @include paragraph-container($xxl-wide-paragraph);
+    @include center-self;
+}
+
 
 //grid gaps, example class in html: gap-2 
 @each $key, $val in $grid-gaps {
