@@ -73,7 +73,6 @@ p.tiny {
 
 /* BASE */
 body {
-  height: 5000px;
   margin: 0;
   background: #006c90;
   background: repeating-linear-gradient(to bottom, #006c90, #006c90 15%, #2D4654 30%, #006c90 45%, #2D4654 60%, #006c90 75%, #2D4654 100%);
@@ -671,7 +670,7 @@ img#header-logo {
 }
 
 .wp-block-columns {
-  margin: 100px 0;
+  padding: 100px 0;
   gap: 5em;
 }
 
