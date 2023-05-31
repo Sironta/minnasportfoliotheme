@@ -38,7 +38,7 @@ p.large {
 }
 
 p {
-    @include paragraph-font($smaller-font, 400);
+    @include paragraph-font($small-font, 400);
 }
 
 p.tiny {

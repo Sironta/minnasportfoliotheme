@@ -23,13 +23,11 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 }
 
 .p-container-regular {
-        @include paragraph-container($regular-paragraph)
+    @include paragraph-container($regular-paragraph);
 }
 
 .p-container-medium {
-    .align-left {
-        @include paragraph-container($regular-paragraph)
-    }
+    @include paragraph-container($regular-paragraph)
 }
 
 .p-container-wide {
