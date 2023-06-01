@@ -1,13 +1,5 @@
-%flex-layout {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
 header.container {
-    @extend %flex-layout;
+    @include flex-layout;
     max-width: 1300px;
     min-height: 100px;
     box-shadow: $base-box-shadow;
@@ -15,11 +7,11 @@ header.container {
 }
 
 .header {
-    @extend %flex-layout;
+    @include flex-layout;
     flex-direction: row;
 }
 
-img#header-logo {
+.minna-logo {
     height: 60px;
     width: auto;
     margin: $base-margin 0;

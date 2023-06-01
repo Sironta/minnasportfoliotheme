@@ -20,6 +20,10 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
     flex-direction: column;
 }
 
+main.container {
+    margin-bottom: $wide-margin;
+}
+
 .row {
     display: flex;
     flex-flow: row wrap;

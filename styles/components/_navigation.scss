@@ -3,7 +3,7 @@
 
 
 .primary-nav {
-    @extend %flex-layout;
+    @include flex-layout;
     justify-content: center;
     ul {
         margin-left: -$base-padding;

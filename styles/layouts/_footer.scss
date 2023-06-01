@@ -1,0 +1,6 @@
+.footer {
+    @include flex-layout;
+    flex-direction: row;
+    max-width: 800px;
+    height: 200px;
+}

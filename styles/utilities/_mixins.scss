@@ -34,3 +34,10 @@
     display: flex;
     align-self: center;
 }
+
+@mixin flex-layout {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+}
