@@ -47,5 +47,6 @@ p.small {
 
 p.tiny {
     @include paragraph-font($tiny-font, 300);
+    margin: $base-margin 0;
 }
 

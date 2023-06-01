@@ -76,6 +76,7 @@ p.tiny {
   margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 300;
+  margin: 16px 0;
 }
 
 /* BUTTONS */
@@ -179,23 +180,23 @@ p.tiny {
 }
 
 /* NAVIGATION */
-.primary-nav {
+.menu-primary-navigation-menu-container {
   width: 100%;
   display: flex;
   align-items: flex-end;
   box-sizing: border-box;
   justify-content: center;
 }
-.primary-nav ul {
+.menu-primary-navigation-menu-container ul {
   margin-left: -16px;
   margin-right: -16px;
 }
-.primary-nav ul li {
+.menu-primary-navigation-menu-container ul li {
   list-style: none;
   display: inline-block;
   padding: 0 16px;
 }
-.primary-nav ul li a {
+.menu-primary-navigation-menu-container ul li a {
   text-decoration: none;
   color: #ECF2F6;
   font-weight: 600;
@@ -207,10 +208,10 @@ p.tiny {
   text-transform: uppercase;
   transition: text-decoration 0.5s ease;
 }
-.primary-nav ul li a:hover {
+.menu-primary-navigation-menu-container ul li a:hover {
   text-decoration: overline;
 }
-.primary-nav ul li a:active {
+.menu-primary-navigation-menu-container ul li a:active {
   text-decoration: overline;
 }
 

@@ -1,9 +1,9 @@
 <?php
 
-/* For making the logo customizeable */
-
-
-    
-
+register_nav_menus(
+    array(
+        'primary-menu' => __('Main Menu')
+    )
+);
 
 ?>

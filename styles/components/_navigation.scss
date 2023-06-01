@@ -1,8 +1,6 @@
 /* NAVIGATION */
 
-
-
-.primary-nav {
+.menu-primary-navigation-menu-container {
     @include flex-layout;
     justify-content: center;
     ul {

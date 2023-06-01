@@ -10,22 +10,12 @@
 </head>
 <body>
     <header class="container">
-        <div class="header container">
+        <div class="header container justify-space-between">
         <a href="<?php echo home_url(); ?>">
             <img class="minna-logo" id="header-logo" src="<?php bloginfo("template_url") ?>/Logo.png" alt="">
         </a>
-            <nav class="primary-nav">
-                <ul>
-                    <li>
-                        <a href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+            <nav>
+                <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
             </nav>
             <button class="primary-btn">Hire me</button>
         </div>
