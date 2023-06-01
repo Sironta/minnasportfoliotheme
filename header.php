@@ -20,3 +20,5 @@
             <button class="primary-btn">Hire me</button>
         </div>
     </header>
+
+    <main class="container">
