@@ -3,14 +3,9 @@
     gap: 5em;
 }
 
-.wp-block-column {
+.wp-block-column .wp-block-group {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
     align-items: center;
 }
-
-/* .wp-block-group__inner-container {
-    display: flex;
-    flex-direction: column;
-} */
