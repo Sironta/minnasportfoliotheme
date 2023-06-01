@@ -3,17 +3,17 @@
 @import 'utilities/mixins';
 @import 'utilities/typography';
 
-//base & layout
-@import 'layouts/base';
-@import 'layouts/breakpoints';
-@import 'layouts/grid';
-@import 'layouts/header';
-@import 'layouts/reset';
-
 //components (button, card, navbar)
 @import 'components/buttons';
 @import 'components/navigation.scss';
 @import 'components/carousels';
+
+//base & layout
+@import 'layouts/breakpoints';
+@import 'layouts/grid';
+@import 'layouts/base';
+@import 'layouts/header';
+@import 'layouts/reset';
 
 //pages
 @import 'pages/index';

@@ -32,3 +32,11 @@ a {
         color: darken($primary-font-color, $amount: 20%);
     }
 }
+
+.base-margin {
+    margin: $base-margin;
+}
+
+.wide-margin {
+    margin: $wide-margin 0;
+}
