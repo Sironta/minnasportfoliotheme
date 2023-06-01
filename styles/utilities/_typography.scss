@@ -10,27 +10,27 @@
 /* TEXT STYLES */
 
 h1 {
-    @include heading-font($x-large-font);
+    @include heading-font($xxl-font);
 }
 
 h2 {
-    @include heading-font($large-font);
+    @include heading-font($xl-font);
 }
 
 h3 {
-    @include paragraph-font($medium-1-font);
+    @include heading-font($large-font);
 }
 
 h4 {
-    @include paragraph-font($medium-2-font);
+    @include paragraph-font($medium-1-font);
 }
 
 h5 {
-    @include paragraph-font( $small-font);
+    @include paragraph-font($medium-2-font);
 }
 
 h6 {
-    @include paragraph-font($smaller-font);
+    @include paragraph-font($small-font);
 }
 
 p.large {
@@ -39,6 +39,10 @@ p.large {
 
 p {
     @include paragraph-font($small-font, 400);
+}
+
+p.small {
+    @include paragraph-font($smaller-font, 400);
 }
 
 p.tiny {

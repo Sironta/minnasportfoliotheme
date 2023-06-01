@@ -3,19 +3,26 @@
 /* TEXT STYLES */
 h1 {
   color: #ECF2F6;
-  font-size: 2.75rem;
+  font-size: 3.25rem;
   margin: 32px 0;
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
 }
 
 h2 {
   color: #ECF2F6;
-  font-size: 2.25rem;
+  font-size: 2.75rem;
   margin: 32px 0;
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
 }
 
 h3 {
+  color: #ECF2F6;
+  font-size: 2.25rem;
+  margin: 32px 0;
+  font-family: Sansita, "Lucida Sans", "Trebuchet MS";
+}
+
+h4 {
   color: #ECF2F6;
   font-size: 1.75rem;
   margin: 32px 0;
@@ -23,7 +30,7 @@ h3 {
   font-weight: 800;
 }
 
-h4 {
+h5 {
   color: #ECF2F6;
   font-size: 1.5rem;
   margin: 32px 0;
@@ -31,17 +38,9 @@ h4 {
   font-weight: 800;
 }
 
-h5 {
-  color: #ECF2F6;
-  font-size: 1.25rem;
-  margin: 32px 0;
-  font-family: Barlow, "Verdana", "Tahoma";
-  font-weight: 800;
-}
-
 h6 {
   color: #ECF2F6;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 800;
@@ -58,6 +57,14 @@ p.large {
 p {
   color: #ECF2F6;
   font-size: 1.25rem;
+  margin: 32px 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  font-weight: 400;
+}
+
+p.small {
+  color: #ECF2F6;
+  font-size: 1rem;
   margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 400;
