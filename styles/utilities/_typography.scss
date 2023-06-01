@@ -11,6 +11,8 @@
 
 h1 {
     @include heading-font($xxl-font);
+    text-align: center;
+    margin: $base-margin * 4 0;
 }
 
 h2 {

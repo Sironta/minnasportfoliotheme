@@ -22,6 +22,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 main.container {
     margin-bottom: $wide-margin;
+    margin-top: $wide-margin / 2;
 }
 
 .row {
@@ -30,7 +31,7 @@ main.container {
 }
 
 .align-self-center {
-    @include center-self;
+    @include align-self(center);
 }
 
 .flex-dir-row {
@@ -42,22 +43,35 @@ main.container {
 }
 
 .p-container-medium {
-    @include paragraph-container($regular-paragraph)
+    @include paragraph-container($medium-paragraph)
 }
 
 .p-container-wide {
     @include paragraph-container($wide-paragraph)
 }
 
-.text-container-wide {
+.text-container-wide-centered {
     @include paragraph-container($xl-wide-paragraph);
-    @include center-self;
+    @include align-self(center);
 }
 
-.text-container-extra-wide {
+.text-container-extra-wide-centered {
     @include paragraph-container($xxl-wide-paragraph);
-    @include center-self;
+    @include align-self(center);
 }
+
+.text-container-wide-left {
+    @include paragraph-container($xl-wide-paragraph);
+    @include align-self(flex-start);
+}
+
+.text-container-extra-wide-left {
+    @include paragraph-container($xxl-wide-paragraph);
+    @include align-self(flex-start);
+    margin: 0 $wide-margin;
+}
+
+
 
 
 //grid gaps, example class in html: gap-2 

@@ -1,11 +1,20 @@
 .wp-block-columns {
+    display: flex;
     padding: 100px 0;
     gap: 5em;
 }
 
-.wp-block-column .wp-block-group {
+.wp-block-column/* , .wp-block-group */ {
     display: flex;
     flex-flow: row wrap;
     align-content: center;
     align-items: center;
+}
+
+.wp-block-image {
+    margin: 0;
+}
+
+.wp-block-image.horizontal img {
+    margin: $wide-margin / 2 0;
 }

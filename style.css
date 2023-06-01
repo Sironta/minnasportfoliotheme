@@ -6,6 +6,8 @@ h1 {
   font-size: 3.25rem;
   margin: 32px 0;
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
+  text-align: center;
+  margin: 64px 0;
 }
 
 h2 {
@@ -227,6 +229,7 @@ p.tiny {
 
 main.container {
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 
 .row {
@@ -249,7 +252,7 @@ main.container {
 }
 
 .p-container-medium {
-  max-width: 450px;
+  max-width: 500px;
   margin: 0;
 }
 
@@ -258,18 +261,33 @@ main.container {
   margin: 0;
 }
 
-.text-container-wide {
+.text-container-wide-centered {
   max-width: 800px;
   margin: 0;
   display: flex;
   align-self: center;
 }
 
-.text-container-extra-wide {
+.text-container-extra-wide-centered {
   max-width: 1000px;
   margin: 0;
   display: flex;
   align-self: center;
+}
+
+.text-container-wide-left {
+  max-width: 800px;
+  margin: 0;
+  display: flex;
+  align-self: flex-start;
+}
+
+.text-container-extra-wide-left {
+  max-width: 1000px;
+  margin: 0;
+  display: flex;
+  align-self: flex-start;
+  margin: 0 100px;
 }
 
 .gap-0 > * {
@@ -739,21 +757,38 @@ header.container {
 }
 
 .wp-block-columns {
+  display: flex;
   padding: 100px 0;
   gap: 5em;
 }
 
-.wp-block-column .wp-block-group {
+.wp-block-column {
   display: flex;
   flex-flow: row wrap;
   align-content: center;
   align-items: center;
 }
 
+.wp-block-image {
+  margin: 0;
+}
+
+.wp-block-image.horizontal img {
+  margin: 50px 0;
+}
+
 .front-col-2 .wp-block-group__inner-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+p.about-me {
+  margin-bottom: 0;
+}
+
+h3.about-me {
+  margin-top: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
