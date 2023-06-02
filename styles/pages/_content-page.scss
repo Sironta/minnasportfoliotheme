@@ -6,3 +6,25 @@ h3.about-me {
     margin-top: 0;
 }
 
+.image-tall-right {
+    @include lg;
+    @media (min-width: map-get($breakpoints, "lg")) {
+        transform: translateY(20%);
+    }
+}
+
+.image-tall-left {
+    @include lg;
+    @media (min-width: map-get($breakpoints, "lg")) {
+        transform: translateY(-20%);
+    }
+}
+
+.content-page-col-right {
+    .wp-block-column {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+}
