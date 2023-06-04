@@ -795,6 +795,12 @@ header.container {
   flex-flow: row wrap;
   align-content: center;
   align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 720px) {
+  .wp-block-column {
+    flex-direction: row;
+  }
 }
 
 .wp-block-image {
@@ -818,12 +824,39 @@ header.container {
   align-self: flex-start;
 }
 
-p.about-me {
+.wp-block-contact-form-7-contact-form-selector {
+  width: 70%;
+}
+.wp-block-contact-form-7-contact-form-selector form .input-field, .wp-block-contact-form-7-contact-form-selector form textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+  border-right-color: #b1c4ca;
+  border-bottom-color: #b1c4ca;
+  border-left-color: #2D4654;
+  border-top-color: #2D4654;
+  border-width: 2px;
+  border-style: solid;
+  color: #040F16;
+}
+.wp-block-contact-form-7-contact-form-selector form ::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.no-margin-bottom, p.no-margin-bottom {
   margin-bottom: 0;
 }
 
-h3.about-me {
+.no-margin-top {
   margin-top: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-padding-top {
+  padding-top: 0;
 }
 
 @media (min-width: 960px) {

@@ -1,9 +1,16 @@
-p.about-me {
+.no-margin-bottom, p.no-margin-bottom {
     margin-bottom: 0;
 }
 
-h3.about-me {
+.no-margin-top {
     margin-top: 0;
+}
+
+.no-padding-bottom {
+    padding-bottom: 0;
+}
+.no-padding-top {
+    padding-top: 0;
 }
 
 .image-tall-left {
@@ -18,3 +25,4 @@ h3.about-me {
         margin: 0;
     }
 }
+

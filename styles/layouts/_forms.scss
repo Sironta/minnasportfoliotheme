@@ -1,0 +1,20 @@
+.wp-block-contact-form-7-contact-form-selector {
+    width: 70%;
+    form {
+        .input-field, textarea {
+            width: 100%;
+            background-color: $off-white;
+            padding: 5px;
+            border-right-color: $primary-color-light;
+            border-bottom-color: $primary-color-light;
+            border-left-color: $secondary-color;
+            border-top-color: $secondary-color;
+            border-width: 2px;
+            border-style: solid;
+            color: $secondary-font-color;
+        }
+        ::placeholder {
+            color: $off-white;
+        }
+    }
+}

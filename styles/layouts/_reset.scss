@@ -21,10 +21,15 @@
 }
 
 .wp-block-column {
+    @include md;
+    @media (min-width: map-get($breakpoints, "md")) {
+        flex-direction: row;
+    }
     display: flex;
     flex-flow: row wrap;
     align-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .wp-block-image {
