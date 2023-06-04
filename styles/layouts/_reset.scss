@@ -34,3 +34,16 @@
 .wp-block-image.horizontal img {
     margin: $wide-margin / 2 0;
 }
+
+.col-right-align {
+    padding-top: 0;
+    .wp-block-group__inner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: flex-end;
+    }
+    .wp-block-column {
+        align-self: flex-start;
+    }
+}

@@ -805,10 +805,17 @@ header.container {
   margin: 50px 0;
 }
 
-.front-col-2 .wp-block-group__inner-container {
+.col-right-align {
+  padding-top: 0;
+}
+.col-right-align .wp-block-group__inner-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  align-content: flex-end;
+}
+.col-right-align .wp-block-column {
+  align-self: flex-start;
 }
 
 p.about-me {
@@ -820,22 +827,13 @@ h3.about-me {
 }
 
 @media (min-width: 960px) {
-  .image-tall-right {
-    transform: translateY(20%);
-  }
-}
-
-@media (min-width: 960px) {
   .image-tall-left {
     transform: translateY(-20%);
   }
 }
 
-.content-page-col-right .wp-block-column {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  align-content: flex-end;
+.col-container .text-container-extra-wide-left {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
