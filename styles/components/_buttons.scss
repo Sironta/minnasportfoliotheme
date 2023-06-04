@@ -58,3 +58,6 @@
     }
 }
 
+.large-btn {
+    @include paragraph-font($large-font, 600);
+}

@@ -181,6 +181,14 @@ p.tiny {
   color: #a7c3d5;
 }
 
+.large-btn {
+  color: #ECF2F6;
+  font-size: 2.25rem;
+  margin: 32px 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  font-weight: 600;
+}
+
 /* NAVIGATION */
 .menu-primary-navigation-menu-container {
   width: 100%;
