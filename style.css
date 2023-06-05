@@ -224,6 +224,27 @@ p.tiny {
 .menu-primary-navigation-menu-container ul li a:active {
   text-decoration: overline;
 }
+.menu-primary-navigation-menu-container .sub-menu {
+  background-color: #b1c4ca;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  position: absolute;
+}
+.menu-primary-navigation-menu-container .sub-menu a {
+  color: #040F16;
+  transition: color 0.5s ease;
+}
+.menu-primary-navigation-menu-container .sub-menu a:hover {
+  text-decoration: none;
+  color: #ECF2F6;
+}
+.menu-primary-navigation-menu-container .sub-menu a:active {
+  text-decoration: none;
+}
+.menu-primary-navigation-menu-container .sub-menu.open {
+  visibility: visible;
+}
 
 .container {
   width: 100%;

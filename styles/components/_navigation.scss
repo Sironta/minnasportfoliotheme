@@ -25,4 +25,26 @@
             }
         }
     }
+    .sub-menu {
+        background-color: $primary-color-light;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        position: absolute;
+        a {
+            color: $secondary-font-color;
+            transition: color 0.5s ease;
+            &:hover {
+                text-decoration: none;
+                color: $primary-font-color;
+            }
+            &:active {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .sub-menu.open {
+        visibility: visible;
+    }
 }
