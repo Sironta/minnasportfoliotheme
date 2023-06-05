@@ -697,77 +697,6 @@ main.container {
   align-items: center;
 }
 
-/* BASE */
-body {
-  margin: 0;
-  background: #006c90;
-  background: repeating-linear-gradient(to bottom, #006c90, #006c90 15%, #2D4654 30%, #006c90 45%, #2D4654 60%, #006c90 75%, #2D4654 100%);
-}
-
-ul {
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #ECF2F6;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #c9dae6;
-}
-a:active {
-  color: #a7c3d5;
-}
-a:visited {
-  color: #a7c3d5;
-}
-
-.base-margin {
-  margin: 16px;
-}
-
-.wide-margin {
-  margin: 100px 0;
-}
-
-header.container {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
-  max-width: 1300px;
-  min-height: 100px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 7px 7px;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
-  flex-direction: row;
-}
-
-.minna-logo {
-  height: 60px;
-  width: auto;
-  margin: 16px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-}
-
-.footer {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  box-sizing: border-box;
-  flex-direction: row;
-  max-width: 800px;
-  height: 200px;
-}
-
 .wp-block-columns {
   display: flex;
   padding: 100px 0;
@@ -824,6 +753,93 @@ header.container {
   align-self: flex-start;
 }
 
+/* BASE */
+body {
+  margin: 0;
+  background: #006c90;
+  background: repeating-linear-gradient(to bottom, #006c90, #006c90 15%, #2D4654 30%, #006c90 45%, #2D4654 60%, #006c90 75%, #2D4654 100%);
+}
+
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ECF2F6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #c9dae6;
+}
+a:active {
+  color: #a7c3d5;
+}
+a:visited {
+  color: #a7c3d5;
+}
+
+.base-margin {
+  margin: 16px;
+}
+
+.wide-margin {
+  margin: 100px 0;
+}
+
+.no-margin-bottom, p.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+header.container {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  max-width: 1300px;
+  min-height: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 7px 7px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.minna-logo {
+  height: 60px;
+  width: auto;
+  margin: 16px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  box-sizing: border-box;
+  flex-direction: row;
+  max-width: 800px;
+  height: 200px;
+}
+
 .wp-block-contact-form-7-contact-form-selector {
   width: 70%;
 }
@@ -841,22 +857,6 @@ header.container {
 }
 .wp-block-contact-form-7-contact-form-selector form ::placeholder {
   color: rgba(255, 255, 255, 0.5);
-}
-
-.no-margin-bottom, p.no-margin-bottom {
-  margin-bottom: 0;
-}
-
-.no-margin-top {
-  margin-top: 0;
-}
-
-.no-padding-bottom {
-  padding-bottom: 0;
-}
-
-.no-padding-top {
-  padding-top: 0;
 }
 
 @media (min-width: 960px) {

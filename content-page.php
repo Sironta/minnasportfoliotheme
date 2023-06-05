@@ -15,3 +15,5 @@
         <?php endif; ?>
 
 <?php get_footer(); ?>
+
+<!-- To do: Style the messages promted by the form. -->
