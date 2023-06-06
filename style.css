@@ -225,19 +225,20 @@ p.tiny {
   text-decoration: overline;
 }
 .menu-primary-navigation-menu-container .sub-menu {
-  background-color: #b1c4ca;
+  background-color: #2D4654;
   display: flex;
   flex-direction: column;
   visibility: hidden;
   position: absolute;
+  padding: 8px 0;
 }
 .menu-primary-navigation-menu-container .sub-menu a {
-  color: #040F16;
-  transition: color 0.5s ease;
+  text-transform: capitalize;
+  transition: text-shadow 0.5s ease;
 }
 .menu-primary-navigation-menu-container .sub-menu a:hover {
   text-decoration: none;
-  color: #ECF2F6;
+  text-shadow: 1px 2px 3px #b1c4ca;
 }
 .menu-primary-navigation-menu-container .sub-menu a:active {
   text-decoration: none;
