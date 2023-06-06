@@ -37,6 +37,10 @@ a {
     margin: $base-margin;
 }
 
+.base-margin-left {
+    margin: 0 0 0 16px;
+}
+
 .wide-margin {
     margin: $wide-margin 0;
 }
@@ -52,6 +56,7 @@ a {
 .no-padding-bottom {
     padding-bottom: 0;
 }
+
 .no-padding-top {
     padding-top: 0;
 }

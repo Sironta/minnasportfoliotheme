@@ -806,6 +806,10 @@ a:visited {
   margin: 16px;
 }
 
+.base-margin-left {
+  margin: 0 0 0 16px;
+}
+
 .wide-margin {
   margin: 100px 0;
 }
@@ -889,6 +893,92 @@ header.container {
 
 .col-container .text-container-extra-wide-left {
   margin: 0;
+}
+
+.grid-container h2 {
+  color: #ECF2F6;
+  font-size: 1.75rem;
+  margin: 32px 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  font-weight: 800;
+}
+.grid-container .wp-block-image {
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 8.3333333333%;
+  height: 8.3333333333%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 16.6666666667%;
+  height: 16.6666666667%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 25%;
+  height: 25%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 33.3333333333%;
+  height: 33.3333333333%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 41.6666666667%;
+  height: 41.6666666667%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 58.3333333333%;
+  height: 58.3333333333%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 66.6666666667%;
+  height: 66.6666666667%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 75%;
+  height: 75%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 83.3333333333%;
+  height: 83.3333333333%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 91.6666666667%;
+  height: 91.6666666667%;
+  box-sizing: border-box;
+  flex-grow: 0;
+  width: 100%;
+  height: 100%;
+}
+.grid-container .wp-block-image img {
+  max-width: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .wpcp-carousel-wrapper, .wpcp-carousel-wrapper .wpcp-carousel-content-wrapper {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .wpcp-carousel-section .wpcp-slide-image {
+    height: 200px;
+    width: 100%;
+  }
+  .wpcp-carousel-section .wpcp-slide-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  } */
+.image-and-text .wp-block-group__inner-container {
+  display: flex;
+}
+.image-and-text .wp-block-group__inner-container .wp-block-group .wp-block-group__inner-container {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,26 @@
 <?php get_header(); ?>
-
-    <?php if (have_posts()): while (have_posts()): the_post(); ?>
-
-    <a href="<?php the_permalink(); ?>">
-
-        <h2><?php the_title(); ?></h2>
+    <div class="grid-container row gap-2 justify-center">
     
-        <?php the_content(); ?>
+        <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-    </a>
+        <div class="col-12-xs col-5-sm col-3-xl">
 
-    <?php endwhile; else: ?>
+            <a href="<?php the_permalink(); ?>">
 
-        <?php "Sorry, no posts matched your criteria!" ?>
-        
-    <?php endif; ?>
+                <h2><?php the_title(); ?></h2>
+
+                <?php the_content(); ?>
+
+            </a>
+
+        </div>
+
+        <?php endwhile; else: ?>
+
+            <?php "Sorry, no posts matched your criteria!" ?>
+
+        <?php endif; ?>
+
+    </div>
 
 <?php get_footer(); ?>

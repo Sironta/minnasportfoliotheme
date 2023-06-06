@@ -1,0 +1,10 @@
+.image-and-text{
+    .wp-block-group__inner-container {
+        display: flex;
+        .wp-block-group {
+            .wp-block-group__inner-container {
+                display: block;
+            }
+        }
+    }
+}
