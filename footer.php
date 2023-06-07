@@ -11,26 +11,37 @@
 <?php wp_footer(); ?>
 
     <script>
+
     const menuItem = document.querySelector('.menu-item-363');
     const subMenu = document.querySelector('.sub-menu');
 
     menuItem.addEventListener('mouseover', function() {
-        subMenu.classList.add('open');
+        subMenu.style.display = 'flex';
     });
 
-    menuItem.addEventListener('mouseout', function() {
-        subMenu.classList.remove('open');
+    menuItem.addEventListener('mouseout', function(event) {
+        if (!isHoveredOverSubMenu(event)) {
+            subMenu.style.display = 'none';
+        }
     });
 
-    subMenu.addEventListener('mouseover', function() {
-        subMenu.classList.add('open');
+    subMenu.addEventListener('mouseover', function(event) {
+        if (!isHoveredOverSubMenu(event)) {
+            subMenu.style.display = 'flex';
+        }
     });
 
     subMenu.addEventListener('mouseout', function(event) {
-        if (!menuItem.contains(event.relatedTarget)) {
-            subMenu.classList.remove('open');
+        if (!isHoveredOverSubMenu(event) && !menuItem.contains(event.relatedTarget)) {
+            subMenu.style.display = 'none';
         }
     });
+
+    // Helper function to check if the mouse is hovered over the subMenu or its descendants
+    function isHoveredOverSubMenu(event) {
+        const relatedTarget = event.relatedTarget;
+        return relatedTarget === subMenu || subMenu.contains(relatedTarget);
+    }
 
     </script>
 

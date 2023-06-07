@@ -226,9 +226,8 @@ p.tiny {
 }
 .menu-primary-navigation-menu-container .sub-menu {
   background-color: #2D4654;
-  display: flex;
+  display: none;
   flex-direction: column;
-  visibility: hidden;
   position: absolute;
   padding: 8px 0;
 }
@@ -242,9 +241,6 @@ p.tiny {
 }
 .menu-primary-navigation-menu-container .sub-menu a:active {
   text-decoration: none;
-}
-.menu-primary-navigation-menu-container .sub-menu.open {
-  visibility: visible;
 }
 
 .container {
