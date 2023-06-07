@@ -3,16 +3,13 @@
 body {
     margin: 0;
     background: $primary-color;
-    background: repeating-linear-gradient(
-        to bottom,
-        $primary-color,
-        $primary-color 15%,
+    background: linear-gradient(
+        90deg,
+        $secondary-color-dark 0,
         $secondary-color 30%,
-        $primary-color 45%,
-        $secondary-color 60%,
-        $primary-color 75%,
-        $secondary-color 100%,
-      );
+        $primary-color 50%,
+        $secondary-color 70%,
+        $secondary-color-dark 100%);
 }
 
 ul {

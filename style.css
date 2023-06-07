@@ -778,8 +778,8 @@ main.container {
 /* BASE */
 body {
   margin: 0;
-  background: #006c90;
-  background: repeating-linear-gradient(to bottom, #006c90, #006c90 15%, #2D4654 30%, #006c90 45%, #2D4654 60%, #006c90 75%, #2D4654 100%);
+  background: #015d7b;
+  background: linear-gradient(90deg, #152026 0, #2D4654 30%, #015d7b 50%, #2D4654 70%, #152026 100%);
 }
 
 ul {
