@@ -230,6 +230,7 @@ p.tiny {
   flex-direction: column;
   position: absolute;
   padding: 8px 0;
+  z-index: 9999;
 }
 .menu-primary-navigation-menu-container .sub-menu a {
   text-transform: capitalize;

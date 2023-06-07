@@ -31,6 +31,7 @@
         flex-direction: column;
         position: absolute;
         padding: $base-padding / 2 0;
+        z-index: 9999;
         a {
             text-transform: capitalize;
             transition: text-shadow 0.5s ease;
