@@ -1,18 +1,23 @@
 @use "sass:math";
 
 .grid-container {
+    .grid-cell {
+        position: relative;
+    }
     h2 {
         @include paragraph-font($medium-1-font);
     }
     .wp-block-image {
-        @for $i from 1 through $grid-columns {
-            box-sizing: border-box;
-            flex-grow: 0;
-            width: math.div($i * 100%, $grid-columns);
-            height: math.div($i * 100%, $grid-columns);
-        }
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        overflow: hidden;
         img {
-            max-width: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
@@ -20,18 +25,4 @@
     }
 }
 
-/* .wpcp-carousel-wrapper, .wpcp-carousel-wrapper .wpcp-carousel-content-wrapper {
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
-  
-  .wpcp-carousel-section .wpcp-slide-image {
-    height: 200px;
-    width: 100%;
-  }
-  .wpcp-carousel-section .wpcp-slide-image img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  } */
+

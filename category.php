@@ -3,7 +3,7 @@
     
         <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
-        <div class="col-12-xs col-5-sm col-3-xl">
+        <div class="grid-cell col-12-xs col-5-sm col-3-xl">
 
             <a href="<?php the_permalink(); ?>">
 
