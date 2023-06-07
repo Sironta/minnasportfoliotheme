@@ -1,4 +1,6 @@
-@use "sass:math";
+.category-description.text-container-wide-centered p{
+    @include paragraph-font($medium-2-font, 400); 
+}
 
 .grid-container {
     .grid-cell {

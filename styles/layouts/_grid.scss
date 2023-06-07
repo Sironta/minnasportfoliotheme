@@ -75,9 +75,6 @@ main.container {
     }
 }
 
-
-
-
 //grid gaps, example class in html: gap-2 
 @each $key, $val in $grid-gaps {
     .gap-#{$key} > * {

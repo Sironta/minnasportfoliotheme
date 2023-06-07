@@ -1,4 +1,16 @@
 <?php get_header(); ?>
+
+<div class="align-self-center">  
+    <h2>
+        <?php $category = get_the_category(); 
+        echo $category[0]->cat_name;
+        ?>
+    </h2>
+</div>
+<div class="category-description text-container-wide-centered">
+    <?php echo category_description(); ?>
+</div>    
+
     <div class="grid-container row gap-2 justify-center">
     
         <?php if (have_posts()): while (have_posts()): the_post(); ?>

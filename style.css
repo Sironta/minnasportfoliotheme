@@ -892,6 +892,14 @@ header.container {
   margin: 0;
 }
 
+.category-description.text-container-wide-centered p {
+  color: #ECF2F6;
+  font-size: 1.5rem;
+  margin: 32px 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  font-weight: 400;
+}
+
 .grid-container .grid-cell {
   position: relative;
 }
