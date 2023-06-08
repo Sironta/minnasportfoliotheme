@@ -892,6 +892,28 @@ header.container {
   margin: 0;
 }
 
+.category-image-container .wp-block-group__inner-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+}
+
+.category-headings {
+  flex-direction: column;
+  width: 70%;
+  gap: 100px;
+}
+
+.category-heading {
+  background: #ECC30B;
+  opacity: 0.85;
+  width: 100%;
+  z-index: 8888;
+  display: flex;
+  justify-content: center;
+}
+
 .category-description.text-container-wide-centered p {
   color: #ECF2F6;
   font-size: 1.5rem;

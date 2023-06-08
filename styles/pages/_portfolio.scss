@@ -1,0 +1,22 @@
+.category-image-container {
+    .wp-block-group__inner-container {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 0;
+    }
+}
+.category-headings {
+    flex-direction: column;
+    width: 70%;
+    gap: 100px;
+}
+
+.category-heading {
+    background: $accent-color;
+    opacity: 0.85;
+    width: 100%;
+    z-index: 8888;
+    display: flex;
+    justify-content: center;
+}
