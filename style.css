@@ -263,6 +263,7 @@ p.tiny {
 main.container {
   margin-bottom: 100px;
   margin-top: 50px;
+  min-height: 75vw;
 }
 
 .row {
@@ -906,6 +907,45 @@ header.container {
   left: 50%;
   width: 100vw;
 }
+.category-image-container .wp-block-group__inner-container .wp-block-image img {
+  height: 100%;
+}
+
+@media (min-width: 0) {
+  .image-group-1, .image-group-2, .image-group-3, .image-group-4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .image-group-1 figure:nth-child(1), .image-group-2 figure:nth-child(1), .image-group-3 figure:nth-child(1), .image-group-4 figure:nth-child(1) {
+    display: block;
+  }
+  .image-group-1 figure:nth-child(2),
+  .image-group-1 figure:nth-child(3),
+  .image-group-1 figure:nth-child(4), .image-group-2 figure:nth-child(2),
+  .image-group-2 figure:nth-child(3),
+  .image-group-2 figure:nth-child(4), .image-group-3 figure:nth-child(2),
+  .image-group-3 figure:nth-child(3),
+  .image-group-3 figure:nth-child(4), .image-group-4 figure:nth-child(2),
+  .image-group-4 figure:nth-child(3),
+  .image-group-4 figure:nth-child(4) {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .image-group-1 figure:nth-child(2), .image-group-2 figure:nth-child(2), .image-group-3 figure:nth-child(2), .image-group-4 figure:nth-child(2) {
+    display: block;
+  }
+}
+@media (min-width: 720px) {
+  .image-group-1 figure:nth-child(3), .image-group-2 figure:nth-child(3), .image-group-3 figure:nth-child(3), .image-group-4 figure:nth-child(3) {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .image-group-1 figure:nth-child(4), .image-group-2 figure:nth-child(4), .image-group-3 figure:nth-child(4), .image-group-4 figure:nth-child(4) {
+    display: block;
+  }
+}
 
 .image-group-2 .wp-block-group__inner-container {
   transform: translate(-50%, 110%);
@@ -921,11 +961,13 @@ header.container {
 
 .category-headings {
   flex-direction: column;
+  flex-grow: 1;
   width: 70%;
-  gap: 100px;
+  gap: 20px;
 }
 
 .category-heading {
+  margin: 50px 0;
   background: #ECC30B;
   opacity: 0.85;
   width: 100%;
