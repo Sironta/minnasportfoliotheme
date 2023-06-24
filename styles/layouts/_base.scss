@@ -17,7 +17,7 @@ ul {
 }
 
 a {
-    @include link;
+    @include link ($primary-font-color);
     transition: color 0.3s ease;
     &:hover {
         color: darken($primary-font-color, $amount: 10%);

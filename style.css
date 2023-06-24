@@ -104,9 +104,11 @@ p.tiny {
 }
 .primary-btn:hover {
   background-color: #f7d84d;
+  color: #103b57;
 }
 .primary-btn:active {
   background-color: #bb9b09;
+  color: black;
 }
 .primary-btn:visited {
   color: #040F16;
@@ -134,9 +136,11 @@ p.tiny {
 }
 .secondary-btn:hover {
   background-color: #dfe6e9;
+  color: #103b57;
 }
 .secondary-btn:active {
   background-color: #93adb5;
+  color: black;
 }
 .secondary-btn:visited {
   color: #040F16;
@@ -167,9 +171,11 @@ p.tiny {
 }
 .tertiary-btn:hover {
   background-color: rgba(255, 255, 255, 0);
+  color: white;
 }
 .tertiary-btn:active {
   background-color: rgba(230, 230, 230, 0);
+  color: #c9dae6;
 }
 .tertiary-btn:visited {
   color: #ECF2F6;
@@ -896,7 +902,21 @@ header.container {
   position: absolute;
   display: flex;
   flex-direction: row;
-  left: 0;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: 100vw;
+}
+
+.image-group-2 .wp-block-group__inner-container {
+  transform: translate(-50%, 110%);
+}
+
+.image-group-3 .wp-block-group__inner-container {
+  transform: translate(-50%, 220%);
+}
+
+.image-group-4 .wp-block-group__inner-container {
+  transform: translate(-50%, 330%);
 }
 
 .category-headings {

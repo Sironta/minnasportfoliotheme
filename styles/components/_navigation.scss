@@ -11,7 +11,7 @@
             display: inline-block;
             padding: 0 $base-padding;
             a {
-                @include link;
+                @include link ($primary-font-color);
                 @include paragraph-font($small-font, 200);
                 text-transform: uppercase;
                 transition: text-decoration 0.5s ease;
