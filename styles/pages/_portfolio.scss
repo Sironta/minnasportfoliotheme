@@ -3,17 +3,73 @@
         position: absolute;
         display: flex;
         flex-direction: row;
-        left: 0;
+        transform: translate(-50%, 0);
+        left: 50%;
+        width: 100vw;
+        .wp-block-image img {
+            height: 100%;
+        }
     }
 }
+
+.image-group-1, .image-group-2, .image-group-3, .image-group-4  {
+    @include xs {
+        display: flex;
+        flex-wrap: wrap;
+        figure:nth-child(1) {
+            display: block;
+        }
+        figure:nth-child(2),
+        figure:nth-child(3),
+        figure:nth-child(4) {
+            display: none;
+        }
+    }
+    @include sm {
+        figure:nth-child(2) {
+            display: block;
+        }
+    }
+    @include md {
+        figure:nth-child(3) {
+            display: block;
+        }
+    }
+    @include xl {
+        figure:nth-child(4) {
+            display: block;
+        }
+    }
+}
+
+.image-group-2 {
+    .wp-block-group__inner-container {
+        transform: translate(-50%, 110%);
+    }
+}
+
+.image-group-3 {
+    .wp-block-group__inner-container {
+        transform: translate(-50%, 220%);
+    }
+}
+
+.image-group-4 {
+    .wp-block-group__inner-container {
+        transform: translate(-50%, 330%);
+    }
+}
+
 .category-headings {
     flex-direction: column;
+    flex-grow: 1;
     width: 70%;
-    gap: 100px;
+    gap: 20px;
 }
 
 .category-heading {
-    background: $accent-color;
+    margin: 50px 0;
+    background: #ECC30B;
     opacity: 0.85;
     width: 100%;
     z-index: 8888;

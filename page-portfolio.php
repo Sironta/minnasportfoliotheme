@@ -1,29 +1,51 @@
-<?php get_header(); ?>
+<?php
+get_header();
 
-    <?php if (have_posts()): while (have_posts()): the_post(); ?>
+if (have_posts()) :
+    while (have_posts()) :
+        the_post();
+?>
 
-    <h2><?php the_title(); ?></h2>
+        <h2><?php the_title(); ?></h2>
+        <?php the_content(); ?>
 
-    <?php the_content(); ?>
+        <?php
+        $desired_order = array('3d-games', 'visual-audiovisual', 'web-and-app-design', 'art-and-other-projects');
 
-    <?php $categories = get_categories(); ?>
+        $categories = get_categories();
 
-    <div class="category-headings align-self-center">
-    <?php if ($categories) {
-    foreach ($categories as $category) {
-        echo '<div class="category-heading align-self-center">';
-        echo '<a href="' . get_category_link($category->term_id) . '">';
-        echo '<h2>' . $category->name . '</h2>';
-        echo '</a>';
-        echo '</div>';
-    }
-    } ?>
-    </div>
+        $sorted_categories = array();
 
-        <?php endwhile; else: ?>
+        foreach ($desired_order as $slug) {
+            foreach ($categories as $category) {
+                if ($category->slug === $slug) {
+                    $sorted_categories[] = $category;
+                    break;
+                }
+            }
+        }
+        ?>
 
-            <?php "Sorry, no posts matched your criteria!" ?>
+        <div class="category-headings align-self-center">
+            <?php
+            if ($sorted_categories) {
+                foreach ($sorted_categories as $category) {
+                    echo '<div class="category-heading align-self-center">';
+                    echo '<a href="' . get_category_link($category->term_id) . '">';
+                    echo '<h2>' . $category->name . '</h2>';
+                    echo '</a>';
+                    echo '</div>';
+                }
+            }
+            ?>
+        </div>
 
-        <?php endif; ?>
+    <?php endwhile;
+else : ?>
 
-<?php get_footer(); ?>
+    <p>Sorry, no posts matched your criteria!</p>
+
+<?php endif;
+
+get_footer();
+?>
