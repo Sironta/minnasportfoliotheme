@@ -1,5 +1,7 @@
 </main>
 
+</main>
+
     <footer class="container">
         <div class="footer container justify-space-between">
         <a href="<?php echo home_url(); ?>">

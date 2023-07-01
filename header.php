@@ -9,6 +9,11 @@
     <?php wp_head(); ?>
 </head>
 <body>
+
+<main class="container">
+    <div class="header-hover-area">
+        <div class="header-background"></div>
+    </div>
     <header class="container">
         <div class="header container justify-space-between">
         <a href="<?php echo home_url(); ?>">
@@ -20,5 +25,5 @@
             <button class="primary-btn">Hire me</button>
         </div>
     </header>
-
-    <main class="container">
+<main class="container main-content">
+    

@@ -262,8 +262,10 @@ p.tiny {
 
 main.container {
   margin-bottom: 100px;
-  margin-top: 50px;
   min-height: 75vw;
+}
+main.container .main-content {
+  margin-top: 50px;
 }
 
 .row {
@@ -834,15 +836,33 @@ a:visited {
   padding-top: 0;
 }
 
+/* .header-hover-area {
+    @include header;
+    z-index: 9999;
+    .header-background {
+    @include header;
+        box-shadow: $base-box-shadow;
+        border-radius: 0 0 $base-border-radius $base-border-radius;
+        background-color: $transparent;
+        z-index: -1;
+    }
+}
+
+.header-hover-area:hover ~ .header-background {
+    background-color: $accent-color;
+  } */
 header.container {
   width: 100%;
   display: flex;
   align-items: flex-end;
   box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   max-width: 1300px;
   min-height: 100px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 7px 7px;
+  z-index: 8888;
 }
 
 .header {
@@ -899,16 +919,20 @@ header.container {
   margin: 0;
 }
 
-.category-image-container .wp-block-group__inner-container {
+.category-image-container {
   position: absolute;
-  display: flex;
-  flex-direction: row;
-  transform: translate(-50%, 0);
   left: 50%;
   width: 100%;
 }
+.category-image-container .wp-block-group__inner-container {
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: row;
+}
 .category-image-container .wp-block-group__inner-container .wp-block-image img {
   height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (min-width: 0) {
@@ -963,17 +987,23 @@ header.container {
   display: flex;
 }
 
-.category-link {
+.category-link-1, .category-link-2, .category-link-3, .category-link-4 {
   position: absolute;
   z-index: 8888;
   transform: translateX(-50%);
   left: 50%;
+  width: 60%;
+}
+@media (min-width: 0) {
+  .category-link-1, .category-link-2, .category-link-3, .category-link-4 {
+    width: 100%;
+  }
 }
 
 .category-heading {
   color: #040F16;
   background: #ECC30B;
-  padding: 20px 200px;
+  padding: 15px 0;
   opacity: 0.85;
   z-index: 8888;
   display: flex;
@@ -984,6 +1014,23 @@ header.container {
 }
 .category-heading:active {
   background-color: #bb9b09;
+}
+@media (min-width: 0) {
+  .category-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.category-link-2 {
+  transform: translate(-50%, 110%);
+}
+
+.category-link-3 {
+  transform: translate(-50%, 220%);
+}
+
+.category-link-4 {
+  transform: translate(-50%, 330%);
 }
 
 .category-description.text-container-wide-centered p {

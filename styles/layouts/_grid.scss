@@ -23,8 +23,10 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 
 main.container {
     margin-bottom: $wide-margin;
-    margin-top: $wide-margin / 2;
     min-height: 75vw;
+    .main-content {
+        margin-top: $wide-margin / 2;
+    }
 }
 
 .row {
