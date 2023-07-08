@@ -14,6 +14,8 @@
 
     <script>
 
+    //TRIGGERING SUBMENU
+
     const menuItem = document.querySelector('.menu-item-363');
     const subMenu = document.querySelector('.sub-menu');
 
@@ -44,6 +46,19 @@
         const relatedTarget = event.relatedTarget;
         return relatedTarget === subMenu || subMenu.contains(relatedTarget);
     }
+
+    //CHANGING THE COLOR OF HEADER WHILE SCROLLING
+
+    window.addEventListener('scroll', function() {
+    let headerContainer = document.getElementById('headerContainer');
+    if (window.scrollY > 0) {
+            headerContainer.style.transition = 'background-color 1s';
+            headerContainer.style.backgroundColor = 'var(--secondary-color)';
+        } else {
+            headerContainer.style.transition = 'background-color 1s';
+            headerContainer.style.backgroundColor = ''; // Reset to default color
+        }
+    });
 
     </script>
 

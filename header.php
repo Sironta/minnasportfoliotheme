@@ -11,10 +11,7 @@
 <body>
 
 <main class="container">
-    <div class="header-hover-area">
-        <div class="header-background"></div>
-    </div>
-    <header class="container">
+    <header class="container" id="headerContainer">
         <div class="header container justify-space-between">
         <a href="<?php echo home_url(); ?>">
             <img class="minna-logo" id="header-logo" src="<?php bloginfo("template_url") ?>/Logo.png" alt="">
