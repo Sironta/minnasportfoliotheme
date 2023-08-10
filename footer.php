@@ -16,7 +16,7 @@
 
     //TRIGGERING SUBMENU
 
-    const menuItem = document.querySelector('.menu-item-363');
+    const menuItem = document.querySelector('.menu-item-465');
     const subMenu = document.querySelector('.sub-menu');
 
     menuItem.addEventListener('mouseover', function() {

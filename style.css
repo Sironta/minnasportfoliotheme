@@ -914,17 +914,24 @@ header.container {
   margin: 0;
 }
 
-.category-image-container {
+.gradient-overlay {
+  position: absolute;
+  z-index: 8888;
+  height: 50vw;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgb(9, 9, 121) 50%, rgba(0, 212, 255, 0) 100%);
+}
+
+.category-image-row {
   position: absolute;
   left: 50%;
   width: 100%;
 }
-.category-image-container .wp-block-group__inner-container {
+.category-image-row .wp-block-group__inner-container {
   transform: translate(-50%, 0);
   display: flex;
   flex-direction: row;
 }
-.category-image-container .wp-block-group__inner-container .wp-block-image img {
+.category-image-row .wp-block-group__inner-container .wp-block-image img {
   height: 100%;
   object-fit: cover;
   object-position: center;
@@ -967,65 +974,19 @@ header.container {
 }
 
 .image-group-2 .wp-block-group__inner-container {
-  transform: translate(-50%, 110%);
+  transform: translate(-50%, 100%);
 }
 
 .image-group-3 .wp-block-group__inner-container {
-  transform: translate(-50%, 220%);
+  transform: translate(-50%, 200%);
 }
 
 .image-group-4 .wp-block-group__inner-container {
-  transform: translate(-50%, 330%);
+  transform: translate(-50%, 300%);
 }
 
 .category-container .wp-block-group__inner-container {
   display: flex;
-}
-
-.category-link-1, .category-link-2, .category-link-3, .category-link-4 {
-  position: absolute;
-  z-index: 8888;
-  transform: translateX(-50%);
-  left: 50%;
-  width: 60%;
-}
-@media (min-width: 0) {
-  .category-link-1, .category-link-2, .category-link-3, .category-link-4 {
-    width: 100%;
-  }
-}
-
-.category-heading {
-  color: #040F16;
-  background: #ECC30B;
-  padding: 15px 0;
-  opacity: 0.85;
-  z-index: 8888;
-  display: flex;
-  justify-content: center;
-}
-.category-heading:hover {
-  background-color: #f7d84d;
-}
-.category-heading:active {
-  background-color: #bb9b09;
-}
-@media (min-width: 0) {
-  .category-heading {
-    font-size: 1.5rem;
-  }
-}
-
-.category-link-2 {
-  transform: translate(-50%, 110%);
-}
-
-.category-link-3 {
-  transform: translate(-50%, 220%);
-}
-
-.category-link-4 {
-  transform: translate(-50%, 330%);
 }
 
 .category-description.text-container-wide-centered p {
