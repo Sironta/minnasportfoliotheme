@@ -915,16 +915,18 @@ header.container {
 }
 
 .gradient-overlay {
+  left: 0;
   position: absolute;
-  z-index: 8888;
-  height: 50vw;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgb(9, 9, 121) 50%, rgba(0, 212, 255, 0) 100%);
+  height: 55vw;
+  width: 100%;
+  background: radial-gradient(circle, rgb(231, 230, 240) 0%, rgba(0, 212, 255, 0) 50%);
 }
 
 .category-image-row {
   position: absolute;
   left: 50%;
   width: 100%;
+  z-index: 0;
 }
 .category-image-row .wp-block-group__inner-container {
   transform: translate(-50%, 0);
@@ -985,8 +987,33 @@ header.container {
   transform: translate(-50%, 300%);
 }
 
-.category-container .wp-block-group__inner-container {
+.category-container {
+  top: 50px;
+  position: relative;
   display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-self: center;
+  gap: 50px;
+}
+
+.category-heading {
+  color: #040F16;
+  background: #ECC30B;
+  padding: 15px 0;
+  opacity: 0.85;
+  z-index: 7777;
+  display: flex;
+  justify-content: center;
+  /*     @include xs {
+          font-size: 1.5rem;
+      } */
+}
+.category-heading:hover {
+  background-color: #f7d84d;
+}
+.category-heading:active {
+  background-color: #bb9b09;
 }
 
 .category-description.text-container-wide-centered p {

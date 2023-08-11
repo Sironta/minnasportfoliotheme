@@ -26,6 +26,12 @@ if (have_posts()) :
         }
         ?>
 
+            <div class="category-container">
+            <?php foreach ($sorted_categories as $category) : ?>
+                <a href="<?php echo get_category_link($category->term_id); ?>"><h2 class="category-heading"><?php echo $category->name; ?></h2></a>
+            <?php endforeach; ?>
+            </div>
+
     <?php endwhile;
 else : ?>
 
