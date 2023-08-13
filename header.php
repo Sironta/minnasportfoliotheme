@@ -16,10 +16,16 @@
         <a href="<?php echo home_url(); ?>">
             <img class="minna-logo" id="header-logo" src="<?php bloginfo("template_url") ?>/Logo.png" alt="">
         </a>
-            <nav>
+            <nav class="mainNav">
                 <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
             </nav>
             <button class="primary-btn">Hire me</button>
+            <a href="#" class="menu-icon"><span class="screen-reader-text">Menu</span>
+                <img id="menu" src="<?php bloginfo("template_url") ?>/images/menu-icon.png" alt="Mobile menu icon">
+            </a>
+            <nav class="mobileNav">
+                <?php wp_nav_menu(array('theme_location' => 'primary-menu',)); ?>
+            </nav>
         </div>
     </header>
 <main class="container main-content">

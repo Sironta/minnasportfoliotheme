@@ -3,7 +3,8 @@ $breakpoints: (
     "sm": 480px,
     "md": 720px,
     "lg": 960px,
-    "xl": 1200px
+    "xl": 1200px,
+    "xxl": 1400px
 );
 
 //default breakpoints as mixins with @content to specify the content where the mixin is included
@@ -34,6 +35,12 @@ $breakpoints: (
 
 @mixin xl {
     @media (min-width: map-get($breakpoints, "xl")) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: map-get($breakpoints, "xxl")) {
         @content;
     }
 }

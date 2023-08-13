@@ -1,3 +1,7 @@
+.portfolio-image-main-container {
+    margin-top: $wide-margin;
+}
+
 .category-image-row {
     position: absolute;
     left: 50%;
@@ -11,6 +15,7 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            opacity: 0.7;
         }
     }
 }
@@ -33,12 +38,12 @@
             display: block;
         }
     }
-    @include md {
+    @include lg {
         figure:nth-child(3) {
             display: block;
         }
     }
-    @include xl {
+    @include xxl {
         figure:nth-child(4) {
             display: block;
         }
@@ -74,8 +79,14 @@
     gap: 25px;
     background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(1,104,143,0.8) 50%, rgba(0,212,255,0) 100%);
     a {
-        margin: $wide-margin / 2;
-        width: 60%;
+        margin: $wide-margin / 4;
+        width: 100vw;
+        @include md {
+            margin: $wide-margin / 2;
+        }
+        @include md {
+            width: 60%;
+        }
     }
 }
 
@@ -93,7 +104,16 @@
     &:active {
         background-color: darken($accent-color, 10%);
     }
-/*     @include xs {
-        font-size: 1.5rem;
-    } */
+    @include xs {
+        font-size: $medium-2-font;
+    }
+    @include md {
+        font-size: $medium-1-font;
+    }
+    @include lg {
+        font-size: $large-font;
+    }
+    @include xl {
+        font-size: $xl-font;
+    }
 }
