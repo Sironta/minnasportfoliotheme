@@ -23,7 +23,7 @@
         mobileMenu.classList.toggle('open');
     });
 
-    //TRIGGERING SUBMENU
+    //TRIGGERING SUBMENU 
 
     const menuItem = document.querySelector('.menu-item-465');
     const subMenu = document.querySelector('.sub-menu');
@@ -74,22 +74,9 @@
 </body>
 </html>
 
-<!-- <script>
-        const menuItem = document.querySelector('.menu-item-363');
-        const subMenu = document.querySelector('.sub-menu');
 
-        menuItem.addEventListener('mouseover', function() {
-            subMenu.classList.add('open');
-        });
-
-        subMenu.addEventListener('mouseover', function() {
-            subMenu.classList.toggle('open');
-        });
-
-        subMenu.addEventListener('mouseout', function() {
-            subMenu.classList.toggle('open');
-            
-        });
-
-    </script> -->
-
+<!-- Next up:
+- Adding an arrow to Portfolio in the hamburger menu
+- Making the arrow open the submenu
+- Clicking just portfolio should still open Portfolio main page
+ -->
