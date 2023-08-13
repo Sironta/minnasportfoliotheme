@@ -45,3 +45,27 @@
         }
     }
 }
+
+//Mobile navigation main menu
+
+.mainNav {
+    display: none;
+    @include lg {
+        display: block;
+    }
+}
+
+.menu-icon {
+    display: block;
+    @include lg {
+        display: none;
+    }
+}
+
+.mobileNav {
+    display: none;
+}
+
+.mobileNav.open {
+    display: block;
+}

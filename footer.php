@@ -14,6 +14,15 @@
 
     <script>
 
+    //TOGGLE HAMBURGER MENU
+
+    const menuIcon = document.querySelector('.menu-icon');
+    const mobileMenu = document.querySelector('.mobileNav');
+
+    menuIcon.addEventListener('click', function() {
+        mobileMenu.classList.toggle('open');
+    });
+
     //TRIGGERING SUBMENU
 
     const menuItem = document.querySelector('.menu-item-465');
