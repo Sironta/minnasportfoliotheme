@@ -18,14 +18,10 @@ header.container {
 .header {
     @include flex-layout;
     flex-direction: row;
-    .primary-btn {
-        padding: $base-padding / 2;
-        &::before {
-            content: "Hire";
-            @include lg {
-                content: "Hire me";
-                padding: $base-padding / 2 $base-padding;
-            }
+    .main-nav-btn {
+        display: none;
+        @include lg {
+            display: block;
         }
     }
 }

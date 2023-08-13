@@ -864,10 +864,42 @@ a:visited {
 
 .mobileNav {
   display: none;
+  flex-direction: column;
+  width: 50%;
+  height: 100vh;
+  padding: 16px 48px;
+  position: absolute;
+  background-color: #152026;
+  text-align: left;
+  top: 100px;
+  right: 0;
+  z-index: 9999;
+}
+.mobileNav .menu-primary-navigation-menu-container {
+  justify-content: flex-start;
+}
+.mobileNav #menu-primary-navigation-menu-1 {
+  display: flex;
+  flex-direction: column;
+}
+.mobileNav #menu-primary-navigation-menu-1 li {
+  margin: 16px 0;
+}
+.mobileNav #menu-primary-navigation-menu-1 a {
+  font-size: 1.5rem;
+  transition: text-shadow 0.5s ease;
+}
+.mobileNav #menu-primary-navigation-menu-1 a:hover {
+  text-decoration: none;
+}
+.mobileNav #menu-primary-navigation-menu-1 a:active {
+  text-decoration: none;
+  text-shadow: 1px 2px 3px #b1c4ca;
 }
 
 .mobileNav.open {
-  display: block;
+  display: flex;
+  align-items: flex-start;
 }
 
 header.container {
@@ -893,16 +925,12 @@ header.container {
   box-sizing: border-box;
   flex-direction: row;
 }
-.header .primary-btn {
-  padding: 8px;
-}
-.header .primary-btn::before {
-  content: "Hire";
+.header .main-nav-btn {
+  display: none;
 }
 @media (min-width: 960px) {
-  .header .primary-btn::before {
-    content: "Hire me";
-    padding: 8px 16px;
+  .header .main-nav-btn {
+    display: block;
   }
 }
 
