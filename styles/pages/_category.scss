@@ -5,6 +5,8 @@
 .grid-container {
     .grid-cell {
         position: relative;
+        display: grid;
+        align-items: end;
     }
     h2 {
         @include paragraph-font($medium-1-font);
