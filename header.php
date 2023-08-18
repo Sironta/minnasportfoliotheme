@@ -25,6 +25,7 @@
             </a>
             <nav class="mobileNav">
                 <?php wp_nav_menu(array('theme_location' => 'primary-menu',)); ?>
+                
                 <button class="primary-btn mobile-nav-btn">Hire me!</button>
             </nav>
         </div>

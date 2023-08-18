@@ -23,7 +23,20 @@
         mobileMenu.classList.toggle('open');
     });
 
-    //TRIGGERING SUBMENU 
+    // Function to hide the menu if screen width is large
+    function hideMenuIfLargeScreen() {
+    if (window.innerWidth > 960) { //breakpoint lg
+        mobileMenu.classList.remove('open');
+        }
+    }
+
+    // Attach the function to the window's resize event
+    window.addEventListener('resize', hideMenuIfLargeScreen);
+
+    // Call the function initially to handle the initial screen width
+    hideMenuIfLargeScreen();
+
+    //TRIGGERING SUBMENU IN DESKTOP MAIN MENU
 
     const menuItem = document.querySelector('.menu-item-465');
     const subMenu = document.querySelector('.sub-menu');
