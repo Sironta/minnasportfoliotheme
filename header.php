@@ -19,7 +19,9 @@
             <nav class="mainNav">
                 <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
             </nav>
-            <button class="primary-btn main-nav-btn">Hire me!</button>
+            <a href="http://portfolio-final-version.local/contact-me/">
+                <button class="primary-btn main-nav-btn">Hire me!</button>
+            </a>
             <a href="#" class="menu-icon"><span class="screen-reader-text">Menu</span>
                 <img id="menu" src="<?php bloginfo("template_url") ?>/images/menu-icon.png" alt="Mobile menu icon">
             </a>

@@ -86,10 +86,3 @@
 
 </body>
 </html>
-
-
-<!-- Next up:
-- Adding an arrow to Portfolio in the hamburger menu
-- Making the arrow open the submenu
-- Clicking just portfolio should still open Portfolio main page
- -->
