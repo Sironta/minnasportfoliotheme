@@ -48,8 +48,10 @@
             const subMenu = subMenuItem.querySelector('.sub-menu');
             const menuItemLink = subMenuItem.querySelector('a');
 
-            subMenuItem.addEventListener('click', function(event) {
-                event.preventDefault();
+            // Toggle sub-menu visibility when clicking on the parent menu item
+        menuItemLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default click behavior
+
                 // Toggle sub-menu visibility
                 subMenu.style.display = subMenu.style.display === 'flex' ? 'none' : 'flex';
                 // Toggle class for arrow style based on sub-menu visibility
@@ -62,6 +64,7 @@
                 } else {
                     arrow.textContent = '\2BC8'; // Unicode for right arrow
                 }
+
             });
         });
 
