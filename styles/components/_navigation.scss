@@ -105,12 +105,6 @@
                 text-shadow: 1px 2px 3px $primary-color-light
             }
         }
-        .sub-menu {
-            margin: $base-margin 0;
-            li {
-                margin: $base-margin / 2 0;
-            }
-        }
     }
     ul.menu {
         > .menu-item-has-children {
@@ -120,6 +114,12 @@
             > a.rotate::after {
                 content: var(--arrow-content-down);
             }
+        }
+    }
+    .sub-menu {
+        margin: $base-margin 0;
+        li {
+            margin: $base-margin / 2 0;
         }
     }
 }

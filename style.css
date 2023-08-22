@@ -917,12 +917,6 @@ a:visited {
   text-decoration: none;
   text-shadow: 1px 2px 3px #b1c4ca;
 }
-.mobileNav #menu-primary-navigation-menu-1 .sub-menu {
-  margin: 16px 0;
-}
-.mobileNav #menu-primary-navigation-menu-1 .sub-menu li {
-  margin: 8px 0;
-}
 .mobileNav ul.menu > .menu-item-has-children > a::after {
   content: var(--arrow-content-right);
   margin-left: 5px;
@@ -930,6 +924,12 @@ a:visited {
 }
 .mobileNav ul.menu > .menu-item-has-children > a.rotate::after {
   content: var(--arrow-content-down);
+}
+.mobileNav .sub-menu {
+  margin: 16px 0;
+}
+.mobileNav .sub-menu li {
+  margin: 8px 0;
 }
 
 .mobileNav.open {
