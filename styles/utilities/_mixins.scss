@@ -41,3 +41,11 @@
     align-items: flex-end;
     box-sizing: border-box;
 }
+
+//Element mixins
+
+@mixin arrow-style($content) {
+    content: $content;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}

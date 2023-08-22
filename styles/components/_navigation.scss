@@ -43,6 +43,9 @@
                 text-decoration: none;
             }
         }
+        .menu-item-object-page {
+            display: none;
+        }
     }
 }
 
@@ -65,7 +68,6 @@
 .mobileNav {
     display: none;
     flex-direction: column;
-    width: 50%;
     height: 100vh;
     padding: $base-padding $base-padding * 3;
     position: absolute;
@@ -74,6 +76,12 @@
     top: 100px;
     right: 0;
     z-index: 9999;
+    @include xs {
+        width: 100%;
+    }
+    @include md {
+        width: 50%;
+    }
     .menu-primary-navigation-menu-container {
         justify-content: flex-start;
     }
@@ -103,3 +111,15 @@
     align-items: flex-start;
 }
 
+.mobileNav {
+    ul.menu {
+        > .menu-item-has-children {
+            > a::after {
+                @include arrow-style(var(--arrow-content-right));
+            }
+            > a.rotate::after {
+                content: var(--arrow-content-down);
+            }
+        }
+    }
+}

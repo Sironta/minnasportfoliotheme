@@ -14,62 +14,95 @@
 
     <script>
 
-    //TOGGLE HAMBURGER MENU
+    /* MAIN NAVIGATION */
 
-    const menuIcon = document.querySelector('.menu-icon');
-    const mobileMenu = document.querySelector('.mobileNav');
+    document.addEventListener('DOMContentLoaded', function() {
 
-    menuIcon.addEventListener('click', function() {
-        mobileMenu.classList.toggle('open');
-    });
+        /* TOGGLE HAMBURGER MENU */
 
-    // Function to hide the menu if screen width is large
-    function hideMenuIfLargeScreen() {
-    if (window.innerWidth > 960) { //breakpoint lg
-        mobileMenu.classList.remove('open');
+        const menuIcon = document.querySelector('.menu-icon');
+        const mobileMenu = document.querySelector('.mobileNav');
+
+        menuIcon.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+        });
+
+        // Function to hide the menu if screen width is large
+        function hideMenuIfLargeScreen() {
+        if (window.innerWidth > 960) { //breakpoint lg
+            mobileMenu.classList.remove('open');
+            }
         }
-    }
 
-    // Attach the function to the window's resize event
-    window.addEventListener('resize', hideMenuIfLargeScreen);
+        // Attach the function to the window's resize event
+        window.addEventListener('resize', hideMenuIfLargeScreen);
 
-    // Call the function initially to handle the initial screen width
-    hideMenuIfLargeScreen();
+        // Call the function initially to handle the initial screen width
+        hideMenuIfLargeScreen();
 
-    //TRIGGERING SUBMENU IN DESKTOP MAIN MENU
+        /* TRIGGERING SUBMENU IN HAMBURGER MENU */
 
-    const menuItem = document.querySelector('.menu-item-465');
-    const subMenu = document.querySelector('.sub-menu');
+        const subMenuItems = document.querySelectorAll('.menu-item-has-children');
 
-    menuItem.addEventListener('mouseover', function() {
-        subMenu.style.display = 'flex';
-    });
+        subMenuItems.forEach(function(subMenuItem) {
+            const subMenu = subMenuItem.querySelector('.sub-menu');
+            const menuItemLink = subMenuItem.querySelector('a');
 
-    menuItem.addEventListener('mouseout', function(event) {
-        if (!isHoveredOverSubMenu(event)) {
-            subMenu.style.display = 'none';
-        }
-    });
+            subMenuItem.addEventListener('click', function(event) {
+                event.preventDefault();
+                // Toggle sub-menu visibility
+                subMenu.style.display = subMenu.style.display === 'flex' ? 'none' : 'flex';
+                // Toggle class for arrow style based on sub-menu visibility
+                menuItemLink.classList.toggle('rotate'); // Toggle the rotate class
 
-    subMenu.addEventListener('mouseover', function(event) {
-        if (!isHoveredOverSubMenu(event)) {
+                // Update the arrow content based on class presence
+                const arrow = menuItemLink.querySelector('a::after');
+                if (menuItemLink.classList.contains('rotate')) {
+                    arrow.textContent = '\2BC6'; // Unicode for downward arrow
+                } else {
+                    arrow.textContent = '\2BC8'; // Unicode for right arrow
+                }
+            });
+        });
+
+        /* TRIGGERING SUBMENU IN DESKTOP MAIN MENU */
+
+        const menuItem = document.querySelector('.menu-item-has-children');
+        const subMenu = document.querySelector('.sub-menu');
+
+        menuItem.addEventListener('mouseover', function() {
             subMenu.style.display = 'flex';
-        }
-    });
+        });
 
-    subMenu.addEventListener('mouseout', function(event) {
-        if (!isHoveredOverSubMenu(event) && !menuItem.contains(event.relatedTarget)) {
-            subMenu.style.display = 'none';
-        }
-    });
+        menuItem.addEventListener('mouseout', function(event) {
+            if (!isHoveredOverSubMenu(event)) {
+                subMenu.style.display = 'none';
+            }
+        });
 
-    // Helper function to check if the mouse is hovered over the subMenu or its descendants
-    function isHoveredOverSubMenu(event) {
-        const relatedTarget = event.relatedTarget;
-        return relatedTarget === subMenu || subMenu.contains(relatedTarget);
-    }
+        subMenu.addEventListener('mouseover', function(event) {
+            if (!isHoveredOverSubMenu(event)) {
+                subMenu.style.display = 'flex';
+            }
+        });
 
-    //CHANGING THE COLOR OF HEADER WHILE SCROLLING
+        subMenu.addEventListener('mouseout', function(event) {
+            if (!isHoveredOverSubMenu(event) && !menuItem.contains(event.relatedTarget)) {
+                subMenu.style.display = 'none';
+            }
+        });
+
+        // Helper function to check if the mouse is hovered over the subMenu or its descendants
+            function isHoveredOverSubMenu(event) {
+                const relatedTarget = event.relatedTarget;
+                return relatedTarget === subMenu || subMenu.contains(relatedTarget);
+            }
+
+    }); //End of MAIN NAVIGATION
+
+
+
+    /* CHANGING THE COLOR OF HEADER WHILE SCROLLING */
 
     window.addEventListener('scroll', function() {
     let headerContainer = document.getElementById('headerContainer');

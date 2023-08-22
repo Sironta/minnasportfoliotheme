@@ -44,6 +44,12 @@ $wide-paragraph: 550px;
 $xl-wide-paragraph: 800px;
 $xxl-wide-paragraph: 1000px;
 
+//ELEMENTS
+:root {
+  --arrow-content-right: "\2BC8"; // Unicode arrow right character
+  --arrow-content-down: "\2BC6"; // Unicode downward arrow character
+}
+
 
 
 
