@@ -3,14 +3,14 @@
 }
 
 .category-image-row {
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    z-index: 0000;
     .wp-block-group__inner-container {
         transform: translate(-50%, 0);
         display: flex;
         flex-direction: row;
+        position: absolute;
+        left: 50%;
+        width: 100%;
+        z-index: 0000;
         .wp-block-image img {
             height: 100%;
             object-fit: cover;

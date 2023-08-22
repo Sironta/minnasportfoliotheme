@@ -74,18 +74,18 @@
     background-color: $secondary-color-dark;
     text-align: left;
     top: 100px;
-    right: 0;
+    right: -20%;
     z-index: 9999;
     @include xs {
-        width: 50%;
+        width: 100%;
     }
     @include md {
-        width: 50%;
+        width: 70%;
     }
     .menu-primary-navigation-menu-container {
         justify-content: flex-start;
         .menu-item-object-page {
-            display: flex;
+            display: inline-block;
         }
     }
     #menu-primary-navigation-menu-1 {
@@ -105,16 +105,13 @@
                 text-shadow: 1px 2px 3px $primary-color-light
             }
         }
+        .sub-menu {
+            margin: $base-margin 0;
+            li {
+                margin: $base-margin / 2 0;
+            }
+        }
     }
-}
-
-
-.mobileNav.open {
-    display: flex;
-    align-items: flex-start;
-}
-
-.mobileNav {
     ul.menu {
         > .menu-item-has-children {
             > a::after {
@@ -125,4 +122,10 @@
             }
         }
     }
+}
+
+
+.mobileNav.open {
+    display: flex;
+    align-items: flex-start;
 }
