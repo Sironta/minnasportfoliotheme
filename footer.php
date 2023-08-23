@@ -21,7 +21,7 @@
         /* TOGGLE HAMBURGER MENU */
 
         const menuIcon = document.querySelector('.menu-icon');
-        const mobileMenu = document.querySelector('.mobileNav');
+        const mobileMenu = document.querySelector('.mobile-nav');
 
         menuIcon.addEventListener('click', function() {
             mobileMenu.classList.toggle('open');
@@ -42,14 +42,14 @@
 
         /* TRIGGERING SUBMENU IN HAMBURGER MENU */
 
-        const subMenuItems = document.querySelectorAll('.menu-item-has-children');
+        const subMenuItems = document.querySelectorAll('.mobile-nav .menu-item-has-children');
 
         subMenuItems.forEach(function(subMenuItem) {
             const subMenu = subMenuItem.querySelector('.sub-menu');
             const menuItemLink = subMenuItem.querySelector('a');
 
             // Toggle sub-menu visibility when clicking on the parent menu item
-        menuItemLink.addEventListener('click', function(event) {
+            menuItemLink.addEventListener('click', function(event) {
             event.preventDefault(); // Prevent the default click behavior
 
                 // Toggle sub-menu visibility

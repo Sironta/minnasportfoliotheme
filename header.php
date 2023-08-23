@@ -16,7 +16,7 @@
         <a href="<?php echo home_url(); ?>">
             <img class="minna-logo" id="header-logo" src="<?php bloginfo("template_url") ?>/Logo.png" alt="">
         </a>
-            <nav class="mainNav">
+            <nav class="desktop-nav">
                 <?php wp_nav_menu(array('theme_location' => 'primary-menu')); ?>
             </nav>
             <a href="http://portfolio-final-version.local/contact-me/">
@@ -25,7 +25,7 @@
             <a href="#" class="menu-icon"><span class="screen-reader-text">Menu</span>
                 <img id="menu" src="<?php bloginfo("template_url") ?>/images/menu-icon.png" alt="Mobile menu icon">
             </a>
-            <nav class="mobileNav">
+            <nav class="mobile-nav">
                 <?php wp_nav_menu(array('theme_location' => 'primary-menu',)); ?>
                 
                 <button class="primary-btn mobile-nav-btn">Hire me!</button>

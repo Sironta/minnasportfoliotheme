@@ -51,7 +51,7 @@
 
 //Mobile navigation main menu
 
-.mainNav {
+.desktop-nav {
     display: none;
     @include lg {
         display: block;
@@ -65,7 +65,7 @@
     }
 }
 
-.mobileNav {
+.mobile-nav {
     display: none;
     flex-direction: column;
     height: 100vh;
@@ -124,8 +124,7 @@
     }
 }
 
-
-.mobileNav.open {
+.mobile-nav.open {
     display: flex;
     align-items: flex-start;
 }

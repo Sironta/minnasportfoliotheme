@@ -853,11 +853,11 @@ a:visited {
   display: none;
 }
 
-.mainNav {
+.desktop-nav {
   display: none;
 }
 @media (min-width: 960px) {
-  .mainNav {
+  .desktop-nav {
     display: block;
   }
 }
@@ -871,7 +871,7 @@ a:visited {
   }
 }
 
-.mobileNav {
+.mobile-nav {
   display: none;
   flex-direction: column;
   height: 100vh;
@@ -884,55 +884,55 @@ a:visited {
   z-index: 9999;
 }
 @media (min-width: 0) {
-  .mobileNav {
+  .mobile-nav {
     width: 100%;
   }
 }
 @media (min-width: 720px) {
-  .mobileNav {
+  .mobile-nav {
     width: 70%;
   }
 }
-.mobileNav .menu-primary-navigation-menu-container {
+.mobile-nav .menu-primary-navigation-menu-container {
   justify-content: flex-start;
 }
-.mobileNav .menu-primary-navigation-menu-container .menu-item-object-page {
+.mobile-nav .menu-primary-navigation-menu-container .menu-item-object-page {
   display: inline-block;
 }
-.mobileNav #menu-primary-navigation-menu-1 {
+.mobile-nav #menu-primary-navigation-menu-1 {
   display: flex;
   flex-direction: column;
 }
-.mobileNav #menu-primary-navigation-menu-1 li {
+.mobile-nav #menu-primary-navigation-menu-1 li {
   margin: 16px 0;
 }
-.mobileNav #menu-primary-navigation-menu-1 a {
+.mobile-nav #menu-primary-navigation-menu-1 a {
   font-size: 1.5rem;
   transition: text-shadow 0.5s ease;
 }
-.mobileNav #menu-primary-navigation-menu-1 a:hover {
+.mobile-nav #menu-primary-navigation-menu-1 a:hover {
   text-decoration: none;
 }
-.mobileNav #menu-primary-navigation-menu-1 a:active {
+.mobile-nav #menu-primary-navigation-menu-1 a:active {
   text-decoration: none;
   text-shadow: 1px 2px 3px #b1c4ca;
 }
-.mobileNav ul.menu > .menu-item-has-children > a::after {
+.mobile-nav ul.menu > .menu-item-has-children > a::after {
   content: var(--arrow-content-right);
   margin-left: 5px;
   transition: transform 0.3s ease-in-out;
 }
-.mobileNav ul.menu > .menu-item-has-children > a.rotate::after {
+.mobile-nav ul.menu > .menu-item-has-children > a.rotate::after {
   content: var(--arrow-content-down);
 }
-.mobileNav .sub-menu {
+.mobile-nav .sub-menu {
   margin: 16px 0;
 }
-.mobileNav .sub-menu li {
+.mobile-nav .sub-menu li {
   margin: 8px 0;
 }
 
-.mobileNav.open {
+.mobile-nav.open {
   display: flex;
   align-items: flex-start;
 }
