@@ -32,6 +32,10 @@
     flex-direction: column;
 }
 
+.wp-block-group.image-and-text {
+    margin: 0 0 $wide-margin;
+}
+
 .wp-block-image {
     margin: 0;
 }
@@ -51,4 +55,9 @@
     .wp-block-column {
         align-self: flex-start;
     }
+}
+
+.wp-block-separator {
+    margin: 100px;
+    border: 0px solid;
 }

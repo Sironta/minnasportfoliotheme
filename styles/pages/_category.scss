@@ -11,6 +11,9 @@
     h2 {
         @include paragraph-font($medium-1-font);
     }
+    .wp-block-group.image-and-text {
+        margin: 0;
+    }
     .wp-block-image {
         position: relative;
         width: 100%;
@@ -28,6 +31,3 @@
         }
     }
 }
-
-
-//The containers don't align well when the headings are split on two rows

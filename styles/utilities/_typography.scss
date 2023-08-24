@@ -17,6 +17,7 @@ h1 {
 
 h2 {
     @include heading-font($xl-font);
+    margin: $base-margin * 4 0;
 }
 
 h3 {

@@ -25,6 +25,7 @@ h2 {
   font-size: 2.75rem;
   margin: 32px 0;
   font-family: Sansita, "Lucida Sans", "Trebuchet MS";
+  margin: 64px 0;
 }
 
 h3 {
@@ -601,6 +602,10 @@ main.container .main-content {
   }
 }
 
+.wp-block-group.image-and-text {
+  margin: 0 0 100px;
+}
+
 .wp-block-image {
   margin: 0;
 }
@@ -620,6 +625,11 @@ main.container .main-content {
 }
 .col-right-align .wp-block-column {
   align-self: flex-start;
+}
+
+.wp-block-separator {
+  margin: 100px;
+  border: 0px solid;
 }
 
 /* BASE */
@@ -1166,6 +1176,9 @@ header.container {
   margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 800;
+}
+.grid-container .wp-block-group.image-and-text {
+  margin: 0;
 }
 .grid-container .wp-block-image {
   position: relative;
