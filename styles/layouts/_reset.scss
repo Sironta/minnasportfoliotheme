@@ -53,6 +53,10 @@
     margin: $wide-margin / 2 0;
 }
 
+figure.wp-block-video video {
+    max-height: 512px;
+}
+
 .col-right-align {
     padding-top: 0;
     .wp-block-group__inner-container {

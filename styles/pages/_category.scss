@@ -1,5 +1,6 @@
 .category-description.text-container-wide-centered p{
-    @include paragraph-font($medium-2-font, 400); 
+    @include paragraph-font($medium-2-font, 400);
+    text-align: center;
 }
 
 .grid-container {

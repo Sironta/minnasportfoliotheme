@@ -620,6 +620,10 @@ main.container .main-content {
   margin: 50px 0;
 }
 
+figure.wp-block-video video {
+  max-height: 512px;
+}
+
 .col-right-align {
   padding-top: 0;
 }
@@ -1169,6 +1173,7 @@ header.container {
   margin: 32px 0;
   font-family: Barlow, "Verdana", "Tahoma";
   font-weight: 400;
+  text-align: center;
 }
 
 .grid-container .grid-cell {
