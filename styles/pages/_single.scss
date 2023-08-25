@@ -1,10 +1,39 @@
-.image-and-text{
-    .wp-block-group__inner-container {
-        display: flex;
-        .wp-block-group {
-            .wp-block-group__inner-container {
-                display: block;
-            }
+.post-navigation.wp-block-columns {
+    padding: 100px 0 0;
+}
+
+.post-navigation, .back-to-category, .back-to-all-categories {
+    a {
+        @include link ($primary-font-color);
+        @include paragraph-font($small-font, 400);
+        margin: $base-margin / 2 0;
+        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+        &:hover {
+            color: $off-white;
+            text-shadow: $base-box-shadow;
         }
+        &:active {
+            color: $accent-color;
+        }
+        &:visited {
+            color: $primary-font-color;
+        }
+    }
+    .wp-block-post-navigation-link__arrow-previous {
+        display: inline-block;
+        margin-right: 1ch;
+    }
+    .wp-block-post-navigation-link__arrow-next {
+        display: inline-block;
+        margin-left: 1ch;
+    }
+    .is-arrow-chevron {
+        color: $accent-color;
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 5px;
+    }
+    .next-post {
+        justify-content: flex-end;
     }
 }

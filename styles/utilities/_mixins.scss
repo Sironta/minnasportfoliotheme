@@ -17,7 +17,7 @@
     font-weight: $font-weight;
 }
 
-@mixin link ($font-color){
+@mixin link ($font-color) {
     text-decoration: none;
     color: $font-color;
     font-weight: 600;

@@ -41,5 +41,33 @@ function custom_category_title_shortcode($atts) {
 }
 add_shortcode('category_title', 'custom_category_title_shortcode');
 
+//Customizing Post order
+
+function custom_get_adjacent_posts_by_category($previous = true) {
+    $current_post_categories = get_the_category();
+    $current_category_id = $current_post_categories[0]->term_id;
+
+    // Get posts from the current post's category
+    $args = array(
+        'category' => $current_category_id,
+        'orderby' => 'date',
+        'order' => 'ASC',
+        'posts_per_page' => -1,
+    );
+    $posts_in_category = get_posts($args);
+
+    // Find the current post's index in the category
+    $current_post_index = array_search(get_the_ID(), wp_list_pluck($posts_in_category, 'ID'));
+
+    // Calculate adjacent post index
+    $adjacent_post_index = $previous ? $current_post_index - 1 : $current_post_index + 1;
+
+    if (isset($posts_in_category[$adjacent_post_index])) {
+        return $posts_in_category[$adjacent_post_index];
+    }
+
+    return null;
+}
+
 
 ?>

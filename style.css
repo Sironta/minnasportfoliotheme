@@ -602,8 +602,14 @@ main.container .main-content {
   }
 }
 
-.wp-block-group.image-and-text {
+.image-and-text {
   margin: 0 0 100px;
+}
+.image-and-text .wp-block-group__inner-container {
+  display: flex;
+}
+.image-and-text .wp-block-group__inner-container .wp-block-group .wp-block-group__inner-container {
+  display: block;
 }
 
 .wp-block-image {
@@ -1197,11 +1203,48 @@ header.container {
   object-position: center;
 }
 
-.image-and-text .wp-block-group__inner-container {
-  display: flex;
+.post-navigation.wp-block-columns {
+  padding: 100px 0 0;
 }
-.image-and-text .wp-block-group__inner-container .wp-block-group .wp-block-group__inner-container {
-  display: block;
+
+.post-navigation a, .back-to-category a, .back-to-all-categories a {
+  text-decoration: none;
+  color: #ECF2F6;
+  font-weight: 600;
+  color: #ECF2F6;
+  font-size: 1.25rem;
+  margin: 32px 0;
+  font-family: Barlow, "Verdana", "Tahoma";
+  font-weight: 400;
+  margin: 8px 0;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+.post-navigation a:hover, .back-to-category a:hover, .back-to-all-categories a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.post-navigation a:active, .back-to-category a:active, .back-to-all-categories a:active {
+  color: #ECC30B;
+}
+.post-navigation a:visited, .back-to-category a:visited, .back-to-all-categories a:visited {
+  color: #ECF2F6;
+}
+.post-navigation .wp-block-post-navigation-link__arrow-previous, .back-to-category .wp-block-post-navigation-link__arrow-previous, .back-to-all-categories .wp-block-post-navigation-link__arrow-previous {
+  display: inline-block;
+  margin-right: 1ch;
+}
+.post-navigation .wp-block-post-navigation-link__arrow-next, .back-to-category .wp-block-post-navigation-link__arrow-next, .back-to-all-categories .wp-block-post-navigation-link__arrow-next {
+  display: inline-block;
+  margin-left: 1ch;
+}
+.post-navigation .is-arrow-chevron, .back-to-category .is-arrow-chevron, .back-to-all-categories .is-arrow-chevron {
+  color: #ECC30B;
+  font-size: 1rem;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5px;
+}
+.post-navigation .next-post, .back-to-category .next-post, .back-to-all-categories .next-post {
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

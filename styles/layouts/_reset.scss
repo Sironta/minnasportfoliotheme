@@ -32,9 +32,18 @@
     flex-direction: column;
 }
 
-.wp-block-group.image-and-text {
+.image-and-text{
     margin: 0 0 $wide-margin;
+    .wp-block-group__inner-container {
+        display: flex;
+        .wp-block-group {
+            .wp-block-group__inner-container {
+                display: block;
+            }
+        }
+    }
 }
+
 
 .wp-block-image {
     margin: 0;
