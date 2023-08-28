@@ -3,7 +3,10 @@
 @mixin basic-font($font-size) {
     color: $primary-font-color;
     font-size: $font-size;
-    margin: $base-margin * 2 0;
+    margin: $base-margin 0;
+    @include md {
+        margin: $base-margin * 2 0;
+    }
 }
 
 @mixin heading-font($font-size) {

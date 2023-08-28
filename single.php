@@ -48,8 +48,10 @@
             ?>
             <div class="back-to-category align-self-center">
                 <a href="<?php echo esc_url($category_link); ?>">
-                <span class="wp-block-post-navigation-link__arrow-previous is-arrow-chevron" aria-hidden="true">«</span>
-                Back to <?php echo esc_html($category_name); ?>
+                    <h6>
+                        <span class="wp-block-post-navigation-link__arrow-previous is-arrow-chevron" aria-hidden="true">«</span>
+                        Back to <?php echo esc_html($category_name); ?>
+                    </h6>
                 </a>
             </div>
             <?php
@@ -58,8 +60,11 @@
 
 <div class="back-to-all-categories align-self-center">
     <a href="<?php echo esc_url(get_page_link(get_page_by_path('portfolio'))); ?>">
-    <span class="wp-block-post-navigation-link__arrow-previous is-arrow-chevron" aria-hidden="true">« «</span>
-    Back to All Categories</a>
+        <h6>
+            <span class="wp-block-post-navigation-link__arrow-previous is-arrow-chevron" aria-hidden="true">« «</span>
+            Back to All Categories
+        </h6>
+    </a>
 </div>
 
 

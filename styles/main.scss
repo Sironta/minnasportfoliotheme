@@ -1,10 +1,12 @@
+@import 'layouts/breakpoints';
+
 //variables & functions
 @import 'utilities/variables';
 @import 'utilities/mixins';
 @import 'utilities/typography';
 
 //base
-@import 'layouts/breakpoints';
+
 @import 'layouts/grid';
 @import 'layouts/reset';
 @import 'layouts/base';

@@ -1,11 +1,47 @@
+.image-and-text{
+    margin: 0 0 $wide-margin / 2;
+    .wp-block-group__inner-container {
+        display: flex;
+        flex-direction: column;
+        @include lg {
+            flex-direction: row;
+        }
+        .wp-block-group {
+            .wp-block-group__inner-container {
+                display: block;
+            }
+        }
+        .p-container-wide {
+            min-width: 0;
+            max-width: 100%;
+            @include md {
+                min-width: 450px;
+                max-width: 550px;
+            }
+            @include lg {
+                max-width: 50%;
+                margin: 0 0 $wide-margin;
+            }
+            @include xl {
+                max-width: 550px;
+            }
+        }
+    }
+}
+
 .post-navigation.wp-block-columns {
-    padding: 100px 0 0;
+    gap: 0em;
+    padding: $wide-margin / 2 0 0;
+    @include lg {
+        gap: 5em;
+        padding: $wide-margin 0 0;
+    }
 }
 
 .post-navigation, .back-to-category, .back-to-all-categories {
     a {
         @include link ($primary-font-color);
-        @include paragraph-font($small-font, 400);
+        @include paragraph-font($smaller-font, 400);
         margin: $base-margin / 2 0;
         transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
         &:hover {
@@ -18,6 +54,12 @@
         &:visited {
             color: $primary-font-color;
         }
+        @include md {
+            font-size: $small-font;
+        }
+        h6 {
+            margin: $base-margin / 2 0;
+        }
     }
     .wp-block-post-navigation-link__arrow-previous {
         display: inline-block;
@@ -29,7 +71,7 @@
     }
     .is-arrow-chevron {
         color: $accent-color;
-        font-size: 1rem;
+        font-size: $medium-2-font;
         font-family: 'Times New Roman', Times, serif;
         margin-bottom: 5px;
     }

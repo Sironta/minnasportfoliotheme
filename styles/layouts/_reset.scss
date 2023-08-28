@@ -1,7 +1,12 @@
 .wp-block-columns {
     display: flex;
-    padding: 100px 0;
+    padding: $wide-margin / 2 0;
     gap: 5em;
+    margin-bottom: 0;
+    @include lg {
+        padding: $wide-margin 0;
+        margin-bottom: 1.75em;
+    }
 }
 
 .narrow-columns.wp-block-columns {
@@ -31,19 +36,6 @@
     align-items: center;
     flex-direction: column;
 }
-
-.image-and-text{
-    margin: 0 0 $wide-margin;
-    .wp-block-group__inner-container {
-        display: flex;
-        .wp-block-group {
-            .wp-block-group__inner-container {
-                display: block;
-            }
-        }
-    }
-}
-
 
 .wp-block-image {
     margin: 0;
