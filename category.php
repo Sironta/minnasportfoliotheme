@@ -2,9 +2,7 @@
 
 <div class="align-self-center">  
     <h2>
-        <?php $category = get_the_category(); 
-        echo $category[0]->cat_name;
-        ?>
+        <?php single_cat_title(); ?>
     </h2>
 </div>
 <div class="category-description text-container-wide-centered">

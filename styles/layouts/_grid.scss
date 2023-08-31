@@ -25,7 +25,7 @@ main.container {
     margin-bottom: $wide-margin;
     min-height: 75vw;
     .main-content {
-        margin-top: $wide-margin
+        margin-top: $wide-margin * 2;
     }
 }
 
