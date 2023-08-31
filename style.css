@@ -1314,6 +1314,7 @@ header.container {
 .image-and-text .wp-block-group__inner-container {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 @media (min-width: 960px) {
   .image-and-text .wp-block-group__inner-container {
