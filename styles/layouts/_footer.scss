@@ -3,4 +3,10 @@
     flex-direction: row;
     max-width: 800px;
     height: 200px;
+    .minna-logo {
+        height: 40px;
+        @include sm {
+            height: 60px;
+        }
+    }
 }

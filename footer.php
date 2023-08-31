@@ -50,7 +50,7 @@
 
             // Toggle sub-menu visibility when clicking on the parent menu item
             menuItemLink.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default click behavior
+                event.preventDefault(); // Prevent the default click behavior
 
                 // Toggle sub-menu visibility
                 subMenu.style.display = subMenu.style.display === 'flex' ? 'none' : 'flex';
@@ -60,14 +60,13 @@
                 // Update the arrow content based on class presence
                 const arrow = menuItemLink.querySelector('a::after');
                 if (menuItemLink.classList.contains('rotate')) {
-                    arrow.textContent = '\2BC6'; // Unicode for downward arrow
+                    arrow.textContent = '\u25BC'; // Unicode for downward arrow
                 } else {
-                    arrow.textContent = '\2BC8'; // Unicode for right arrow
+                    arrow.textContent = '\u25B6'; // Unicode for right arrow
                 }
-
             });
         });
-
+ 
         /* TRIGGERING SUBMENU IN DESKTOP MAIN MENU */
 
         const menuItem = document.querySelector('.menu-item-has-children');

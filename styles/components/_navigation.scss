@@ -26,7 +26,7 @@
         }
     }
     .sub-menu {
-        background-color: $secondary-color;
+        background-color: $secondary-color-dark;
         display: none;
         flex-direction: column;
         position: absolute;
@@ -69,6 +69,7 @@
     display: none;
     flex-direction: column;
     height: 100vh;
+    overflow-y: scroll;
     padding: $base-padding $base-padding * 3;
     position: absolute;
     background-color: $secondary-color-dark;
@@ -117,7 +118,8 @@
         }
     }
     .sub-menu {
-        margin: $base-margin 0;
+        margin: 0 $base-margin;
+        position: relative;
         li {
             margin: $base-margin / 2 0;
         }
@@ -127,4 +129,12 @@
 .mobile-nav.open {
     display: flex;
     align-items: flex-start;
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+[aria-hidden="false"] {
+    display: block;
 }

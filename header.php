@@ -25,7 +25,7 @@
             <a href="#" class="menu-icon"><span class="screen-reader-text">Menu</span>
                 <img id="menu" src="<?php bloginfo("template_url") ?>/images/menu-icon.png" alt="Mobile menu icon">
             </a>
-            <nav class="mobile-nav">
+            <nav class="mobile-nav" aria-hidden="true">
                 <?php wp_nav_menu(array('theme_location' => 'primary-menu',)); ?>
                 
                 <button class="primary-btn mobile-nav-btn">Hire me!</button>
