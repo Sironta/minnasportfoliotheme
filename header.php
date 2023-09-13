@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minna's Portfolio</title>
     <link rel="stylesheet" href="<?php bloginfo("stylesheet_url") ?>">
+    <script type="text/javascript" src="./js/bundled.js"></script>
     <?php wp_head(); ?>
 </head>
 <body>

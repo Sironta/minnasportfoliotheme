@@ -1,32 +1,3 @@
-</main>
-
-</main>
-
-    <footer class="container">
-        <div class="footer container justify-space-between">
-        <a href="<?php echo home_url(); ?>">
-            <img class="minna-logo" id="footer-logo" src="<?php bloginfo("template_url") ?>/Logo.png" alt="">
-        </a>
-        <p class="tiny">Copyright 2023: Minna Mellajärvi</p>
-    </footer>
-
-<?php wp_footer(); ?>
-
-<script>
-
-    /* CHANGING THE COLOR OF HEADER WHILE SCROLLING */
-
-window.addEventListener('scroll', function() {
-    let headerContainer = document.getElementById('headerContainer');
-    if (window.scrollY > 0) {
-            headerContainer.style.transition = 'background-color 0.5s';
-            headerContainer.style.backgroundColor = 'var(--secondary-color)';
-        } else {
-            headerContainer.style.transition = 'background-color 0.5s';
-            headerContainer.style.backgroundColor = ''; // Reset to default color
-        }
-    });
-    
 /* MAIN NAVIGATION */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -114,8 +85,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
 }); //End of MAIN NAVIGATION
-
-</script>
-
-</body>
-</html>
