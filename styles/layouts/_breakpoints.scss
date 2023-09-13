@@ -48,7 +48,7 @@ $breakpoints: (
 //extra mixin for specifying the screen size to sth else than on the default list
 
 @mixin breakpoint($bp: 0) {
-    @media (min-width: $bp) {
+    @media (min-width: #{$bp}px) {
         @content;
     }
 }

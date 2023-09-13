@@ -159,6 +159,16 @@ main.container {
 main.container .main-content {
   margin-top: 200px;
 }
+@media (min-width: 390px) {
+  main.container {
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 480px) {
+  main.container {
+    margin-bottom: 100px;
+  }
+}
 
 .row {
   display: flex;

@@ -27,6 +27,12 @@ main.container {
     .main-content {
         margin-top: $wide-margin * 2;
     }
+    @include breakpoint(390) {
+        margin-bottom: 2 * $wide-margin;
+    }
+    @include sm {
+        margin-bottom: $wide-margin;
+    }
 }
 
 .row {
